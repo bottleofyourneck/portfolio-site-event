@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem !important;
+  overflow: hidden;
 }
 
 code {
@@ -16,23 +17,29 @@ code {
 .main-container {
   position: relative;
   background-color: #0d1116;
-
 }
 
 a {
   text-decoration: none;
+  fill: white;
+}
+
+#lol {
+  margin-top: 3px;
 }
 
 a:hover {
-  color: #5000ca;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  fill: #5000ca;
+  transition: fill .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 p, a, h1, h2, h3, h4, h5, label, button {
   color: white;
   font-family: "Lato", sans-serif;
 }
-
+a.light-mode {
+  fill: black;
+}
 .navigation-bar {
   justify-content: space-between;
   background-color: #0d1116;
@@ -103,9 +110,13 @@ p, a, h1, h2, h3, h4, h5, label, button {
     color: #0d1116;
   }
 
+  a {
+    fill: #0d1116;
+  }
+
   a:hover {
-    color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    fill: #5000ca;
+    transition: fill .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   }
 
   .navigation-bar svg {
@@ -146,10 +157,50 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 }
 
+.fade-in {
+  overflow: auto;
+  height: calc(100vh - 64px);
+  margin-top: 64px;
+  
+  /* For WebKit browsers (Chrome, Safari, Edge) */
+  &::-webkit-scrollbar {
+    width: 16px; /* Match default scrollbar width */
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+    background-clip: content-box;
+  }
+  
+  /* For Firefox */
+  scrollbar-width: auto;
+  scrollbar-color: #c1c1c1 transparent;
+}
+
 @media screen {
   @media (max-width: 768px) {
     .items-container {
       padding: 5% 5%;
+    }
+  }
+}
+
+@media screen {
+  @media (max-width: 567px) {
+    .fade-in {
+      margin-top: 56px;
+      height: calc(100vh - 56px);
     }
   }
 }

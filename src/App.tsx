@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from "react";
 import {
   Main,
+  About,
   Timeline,
   Expertise,
   Project,
   Contact,
   Navigation,
-  Footer,
+  //Footer,
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
@@ -29,14 +30,15 @@ function App() {
     return (
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
-        <FadeIn transitionDuration={700}>
+        <FadeIn transitionDuration={700} className="fade-in">
             <Main/>
             <Expertise/>
-            <Timeline/>
+            {/* <Timeline/> */}
             <Project/>
+            <About/>
             <Contact/>
         </FadeIn>
-        <Footer />
+        {/* <Footer /> */}
     </div>
     );
 }

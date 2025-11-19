@@ -17,7 +17,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+const navItems = [['Навыки', 'expertise'], ['Проекты', 'projects'], ['Обо мне', 'about'], ['Контакты', 'contact']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -59,7 +59,7 @@ function Navigation({parentToChild, modeChange}: any) {
 
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Menu</p>
+      <p className="mobile-menu-top"><ListIcon/>Меню</p>
       <Divider />
       <List>
         {navItems.map((item) => (
