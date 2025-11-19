@@ -9,7 +9,7 @@ function Main() {
     <div className="container" id="first-container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src={require('../assets/images/profile-pic.png')} alt="Avatar" />
+          <img src={require('../assets/images/profile-pic.png')}/>
         </div>
         <div className="content">
           <div className="social_icons">

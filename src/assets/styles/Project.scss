@@ -30,6 +30,10 @@
     transform: scale(1.05);
 }
 
+#projects-projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
 @media screen {
     @media (max-width: 700px) {
         .projects-container {

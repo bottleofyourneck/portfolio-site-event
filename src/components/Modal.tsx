@@ -12,7 +12,6 @@ export default function Modal({ onClose, open, children }: { onClose: any, open:
     <>
       <div className="modal-overlay" onClick={onClose}></div>
       <div className="modal-container">
-        <Button onClick={onClose}><FontAwesomeIcon icon={faCircleXmark} size="2x"/></Button>
         {children}
       </div>
     </>,
