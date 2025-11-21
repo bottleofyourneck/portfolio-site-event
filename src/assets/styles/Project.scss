@@ -30,8 +30,117 @@
     transform: scale(1.05);
 }
 
+.horizontal-line {
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 1px;
+}
+
+.modalProjectContainer {
+    overflow: auto;
+    padding: 48px;
+    padding-top: 36px;
+    height: calc(100% - 96px);
+
+    #firsth2 {
+      margin-top: 0;
+    } 
+
+    a {
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin-top: 2em;
+    }
+
+    h3 {
+      margin-top: 2em;
+    }
+
+    img {
+      border-radius: 4px;
+    }
+    
+    ul {
+      padding-left: 16px;
+    }
+
+    /* For WebKit browsers (Chrome, Safari, Edge) */
+    &::-webkit-scrollbar {
+      width: 16px; /* Match default scrollbar width */
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 8px;
+      border: 4px solid transparent;
+      background-clip: content-box;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+      background-clip: content-box;
+    }
+    
+    /* For Firefox */
+    scrollbar-width: auto;
+    scrollbar-color: #c1c1c1 transparent;
+
+    .projects-grid {
+      grid-gap: 36px;
+    }
+}
+
 #projects-projects-grid {
     grid-template-columns: repeat(1, 1fr);
+
+    .project {
+      margin-bottom: 50px;
+
+      p {
+          width: clamp(380px, 80%, 1000px)
+      }
+  
+      button {
+        float: left;
+        background-color: white;
+        color: #050f0b;
+        margin-top: 5px;
+      }
+      
+      button:hover {
+        background-color: #5000ca;
+        color: white;
+      }
+  }
+}
+
+.video-wrapper {
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+
+    iframe {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.note {
+    text-align: right;
+    color: #b1b1b1;
+    width: 100%;
+    display:block;
+    margin-top: 1em;
+    text-decoration: underline;
 }
 
 @media screen {
