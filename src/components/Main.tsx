@@ -29,6 +29,7 @@ function Main() {
           <h1>Даниил Долгополов</h1>
           <p>Руководитель проектов</p>
           <p>Организатор мероприятий</p>
+          <p id="mainNote">В активном поиске работы</p> 
 
           <div className="mobile_social_icons">
             <a href="https://t.me/daniildolgopolov" target="_blank" rel="noreferrer">

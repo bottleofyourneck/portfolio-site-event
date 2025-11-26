@@ -1,3 +1,24 @@
+/* SECTION SHADOWS */
+#projects {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12),
+  0px -2px 4px -1px rgba(0,0,0,0.2),0px -4px 5px 0px rgba(0,0,0,0.14),0px -1px 10px 0px rgba(0,0,0,0.12)
+}
+
+#about {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12),
+  0px -2px 4px -1px rgba(0,0,0,0.2),0px -4px 5px 0px rgba(0,0,0,0.14),0px -1px 10px 0px rgba(0,0,0,0.12)
+}
+
+#contact {
+  box-shadow:
+  0px -2px 4px -1px rgba(0,0,0,0.2),0px -4px 5px 0px rgba(0,0,0,0.14),0px -1px 10px 0px rgba(0,0,0,0.12)
+}
+
+h2 {
+  line-height: 1.1;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -99,7 +120,29 @@ a.light-mode {
   justify-content: center;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
+.margin-bottomDIV {
+  margin-bottom: 1em;
+}
+
 .light-mode {
+  .contact-wrapper {
+    svg {
+      color: #0d1116;
+    }
+  }
+
+  #mainNote {
+    color: rgb(36, 36, 36);
+  }
+
+  .horizontal-line {
+    background-color: black;
+  }
+
   background-color: #f8f9fa;
 
   .navigation-bar {
@@ -124,7 +167,7 @@ a.light-mode {
   }
 
   .about-section {
-    background-image: url("./assets/images/bg-light.png");
+    //background-image: url("./assets/images/bg-light.png");
   }
 
   .skills-container svg {

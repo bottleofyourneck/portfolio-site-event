@@ -1,7 +1,61 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+#contacts-container {
+  display: block;
+}
+
+#contact-div-margin-bot {
+  margin-bottom: calc(1em + 17.6px);
+}
+
+.contact-wrapper-wrapper {
+  a {
+    display: inline-block;
+    margin-right: 16px;
+    height: 50px;
+  }
+}
+
+.contact-wrapper {
+  display: flex;
+
+  height: 50px !important;
+
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    align-content: center;
+    margin-left: 8px;
+  }
+
+  svg.mail {
+    margin-top: 6px;
+  }
+
+  svg.vk {
+    margin-top: 6px;
+  }
+
+  svg {
+    width: 36px !important;
+    height: 36px !important;
+    margin-top: 6px;
+  }
+}
+
+.contact-wrapper:hover {
+  button {
+    background-color: #5000ca;
+    color: white;
+  }
+
+  svg {
+    color: #5000ca;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+}
+
+.note2 {
+  color: #b1b1b1;
+  font-size: 0.9rem;
 }
 
 .contact-form {

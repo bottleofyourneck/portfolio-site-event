@@ -62,7 +62,7 @@ function Expertise() {
                 <Button onClick={() => {setIsEventOpen(false); document.body.classList.remove("no-scroll")}}>
                     <FontAwesomeIcon icon={faCircleXmark} size="2x"/>
                 </Button>
-                <h2>Примеры навыков организации</h2>
+                <h2>Примеры навыков</h2>
             </div>
               
             <div className="projects-container" id="eventSkillsContainer">
@@ -96,10 +96,6 @@ function Expertise() {
                         <a href="https://docs.google.com/document/d/1wRpyLt2zBSCpyWxQbzIKl8mv9msIRGjrJ7dNmDlwzK4/edit?usp=sharing" target="_blank" rel="noreferrer"><img src={require('../assets/images/skills-mocks/organization-skills/skill-3-comm.png')} className="zoom" alt="thumbnail" width="100%"/></a>
                         <a href="https://docs.google.com/document/d/1wRpyLt2zBSCpyWxQbzIKl8mv9msIRGjrJ7dNmDlwzK4/edit?usp=sharing" target="_blank" rel="noreferrer"><h2>Скрипт для волонтёров форума</h2></a>
                     </div>
-                    <div className="project">
-                        <a href="https://docs.google.com/spreadsheets/d/1CDTV_jbZWt670T3szD84008231-OvvSVaDG9RY9Y3gA/edit?usp=sharing" target="_blank" rel="noreferrer"><img src={require('../assets/images/skills-mocks/organization-skills/skill-4-list.png')} className="zoom" alt="thumbnail" width="100%"/></a>
-                        <a href="https://docs.google.com/spreadsheets/d/1CDTV_jbZWt670T3szD84008231-OvvSVaDG9RY9Y3gA/edit?usp=sharing" target="_blank" rel="noreferrer"><h2>Список гостей концерта фестиваля</h2></a>
-                    </div>
                 </div>
             </div>
         </Modal>
@@ -109,7 +105,7 @@ function Expertise() {
                 <Button onClick={() => {setIsManagerOpen(false); document.body.classList.remove("no-scroll")}}>
                     <FontAwesomeIcon icon={faCircleXmark} size="2x"/>
                 </Button>
-                <h2>Примеры навыков управления</h2>
+                <h2>Примеры навыков</h2>
             </div>
               
             <div className="projects-container" id="managerSkillsContainer">
@@ -145,9 +141,10 @@ function Expertise() {
 
         <div className="skills-container">
             <h1>Навыки</h1>
+            <div className="horizontal-line margin-bottomDIV"></div>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faCalendarDay} size="3x" height="100%"/>
+                    <FontAwesomeIcon className="marginIMG" icon={faCalendarDay} size="3x" height="100%"/>
                     <h3>Организация мероприятий</h3>
                     <p>Я участвовал в организации разных событий на разных позициях - от помощника до главного организатора.</p>
                     <div className="flex-chips">
@@ -165,7 +162,7 @@ function Expertise() {
 
                 <div className="skill">
                     
-                    <FontAwesomeIcon icon={faSitemap} size="3x" height="100%"/>
+                    <FontAwesomeIcon className="marginIMG" icon={faSitemap} size="3x" height="100%"/>
                     <h3>Управление проектами</h3>
                     <p>Эти навыки я развиваю не только через организацию мероприятий, но в целом занимаясь различного рода проектами.</p>
                     <div className="flex-chips">
@@ -181,7 +178,7 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                <FontAwesomeIcon icon={faPeopleArrows} size="3x" height="100%"/>
+                <FontAwesomeIcon className="marginIMG" icon={faPeopleArrows} size="3x" height="100%"/>
                     <h3>Гибкие навыки</h3>
                     <p>Отношусь к этому не как к дополнению, а как к отдельной категории скиллов, которые влияют на тот результат, который я выдаю.</p>
                     <div className="flex-chips">

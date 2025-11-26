@@ -1,3 +1,11 @@
+.dark-mode #expertise {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode #about-work {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 #eventSkillsContainer {
   overflow: auto;
   padding: 48px;
@@ -71,6 +79,10 @@
 }
 
 .modalStatic {
+
+  .light-mode path {
+    color: black;
+  }
   height: 96px;
   padding: 0;
   padding-left: 36px;
@@ -127,7 +139,9 @@ span.clear { clear: left; display: block; }
     height: 25px !important;
   
     span {
-        font-family: 'Courier Prime', monospace;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
         color: rgb(39, 40, 34);
     }
   
@@ -189,6 +203,10 @@ body.active-modal {
   }
 }
 
+#expertise {
+    margin-top: 0;
+}
+
 @media screen {
     @media (max-width: 768px) {
         .skills-container {
@@ -203,6 +221,28 @@ body.active-modal {
         
         .skills-container .skills-grid .skill {
             padding-bottom: 10%;
+        }
+        
+
+        #eventSkillsContainer {
+          padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 5%;
+
+            .project {
+              padding-bottom: 10%;
+            }
+        }
+
+        #managerSkillsContainer {
+          padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 5%;
+        }
+
+        .modalStatic {
+          padding-left: 5%;
+          padding-right: 5%;
         }
     }
 

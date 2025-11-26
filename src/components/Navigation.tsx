@@ -17,7 +17,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-const navItems = [['Навыки', 'expertise'], ['Проекты', 'projects'], ['Обо мне', 'about'], ['Контакты', 'contact']];
+const navItems = [['Проекты', 'projects'], ['Навыки', 'expertise'], ['Обо мне', 'about'], ['О работе', 'about-job'], ['Контакты', 'contact']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -50,7 +50,7 @@ function Navigation({parentToChild, modeChange}: any) {
     console.log(section)
     const expertiseElement = document.getElementById(section);
     if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: 'smooth' });
+      expertiseElement.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest" });
       console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
     } else {
       console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found

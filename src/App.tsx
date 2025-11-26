@@ -11,6 +11,7 @@ import {
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
+import { motion } from "framer-motion";
 
 function App() {
     const [mode, setMode] = useState<string>('dark');
@@ -18,8 +19,10 @@ function App() {
     const handleModeChange = () => {
         if (mode === 'dark') {
             setMode('light');
+            document.getElementById('portal')?.classList.add('light-mode');
         } else {
             setMode('dark');
+            document.getElementById('portal')?.classList.remove('light-mode');
         }
     }
 
@@ -32,9 +35,9 @@ function App() {
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700} className="fade-in">
             <Main/>
+            <Project/>
             <Expertise/>
             {/* <Timeline/> */}
-            <Project/>
             <About/>
             <Contact/>
         </FadeIn>
