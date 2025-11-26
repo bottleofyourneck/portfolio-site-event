@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio-site-event/static/css/main.fa9afdda.css",
+    "main.js": "/portfolio-site-event/static/js/main.578018f6.js",
+    "static/js/453.ace21015.chunk.js": "/portfolio-site-event/static/js/453.ace21015.chunk.js",
+    "static/media/project-skazki.png": "/portfolio-site-event/static/media/project-skazki.573126be0b2b0c9a0e60.png",
+    "static/media/project-skazki-4.jpg": "/portfolio-site-event/static/media/project-skazki-4.486e1c372778ac22c023.jpg",
+    "static/media/profile-pic.png": "/portfolio-site-event/static/media/profile-pic.b7ce875059f20a9bf6dd.png",
+    "static/media/about-photo-1.png": "/portfolio-site-event/static/media/about-photo-1.550c1b78fb3b0e646ebe.png",
+    "static/media/skill-3-presentation.png": "/portfolio-site-event/static/media/skill-3-presentation.268593739fe5af76e79f.png",
+    "static/media/about-photo-3.png": "/portfolio-site-event/static/media/about-photo-3.b110ab9341974eb209a5.png",
+    "static/media/skill-2-comm.png": "/portfolio-site-event/static/media/skill-2-comm.de130b264715e9937c1d.png",
+    "static/media/skill-6-form.png": "/portfolio-site-event/static/media/skill-6-form.d7a248b53610d63b8b23.png",
+    "static/media/skill-4-grant.png": "/portfolio-site-event/static/media/skill-4-grant.30f10581243bab921e90.png",
+    "static/media/about-photo-2.png": "/portfolio-site-event/static/media/about-photo-2.8f05cf76f29d32186a5a.png",
+    "static/media/skill-1-lom.png": "/portfolio-site-event/static/media/skill-1-lom.596b5dead21487bb03a4.png",
+    "static/media/skill-2-doc.png": "/portfolio-site-event/static/media/skill-2-doc.1352827508cda0b25c1b.png",
+    "static/media/skill-1-plan.png": "/portfolio-site-event/static/media/skill-1-plan.41c68c12be2232124f71.png",
+    "static/media/skill-7-scenario.png": "/portfolio-site-event/static/media/skill-7-scenario.87a3a85bb786e80bbce2.png",
+    "static/media/skill-3-comm.png": "/portfolio-site-event/static/media/skill-3-comm.94ade04f2e94455f99a1.png",
+    "static/media/skill-5-logistic.png": "/portfolio-site-event/static/media/skill-5-logistic.40da127601efcdb5790a.png",
+    "static/media/media-ohvat.jpg": "/portfolio-site-event/static/media/media-ohvat.40e0fed1d2c95debbf59.jpg",
+    "static/media/skill-5-visual.png": "/portfolio-site-event/static/media/skill-5-visual.973c409aa757b3170cd0.png",
+    "static/media/skazki-survey-good.png": "/portfolio-site-event/static/media/skazki-survey-good.e23c54bb93f61c5ce7cb.png",
+    "static/media/arrow-down.png": "/portfolio-site-event/static/media/arrow-down.835255607e010ee0c2a2.png",
+    "static/media/arrow-down-light.png": "/portfolio-site-event/static/media/arrow-down-light.f7437a6d1a502790ca53.png",
+    "static/media/arrow-up.png": "/portfolio-site-event/static/media/arrow-up.6be3cd4c74e90e0cee18.png",
+    "static/media/arrow-up-light.png": "/portfolio-site-event/static/media/arrow-up-light.a594637fe951e0610672.png",
+    "index.html": "/portfolio-site-event/index.html",
+    "main.fa9afdda.css.map": "/portfolio-site-event/static/css/main.fa9afdda.css.map",
+    "main.578018f6.js.map": "/portfolio-site-event/static/js/main.578018f6.js.map",
+    "453.ace21015.chunk.js.map": "/portfolio-site-event/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa9afdda.css",
+    "static/js/main.578018f6.js"
+  ]
+}
