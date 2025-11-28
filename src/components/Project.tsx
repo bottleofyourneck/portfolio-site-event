@@ -30,7 +30,8 @@ function Project() {
             </div>
             
             <div className="modalProjectContainer">
-                <img src={require('../assets/images/project-skazki.png')} alt="thumbnail" width="100%"/>
+                <img id="desktop-pic" src={require('../assets/images/project-skazki.png')} alt="thumbnail" width="100%"/>
+                <img id="mobile-pic" src={require('../assets/images/project-skazki-11.png')} alt="thumbnail" width="100%"/>
 
                 <h2 id="firsth2">Описание</h2>
                 <div className="horizontal-line"></div>
@@ -119,15 +120,15 @@ function Project() {
                 <h2>Результаты</h2>
                 <div className="horizontal-line"></div>
 
-                <p><ul>
+                <p><ul id="margin-bottom-horizontal-line">
                   <li>Комплексный проект реализован чётко по плану: всё прошло в нужные даты, все команды вышли на сцену, тайминги не были нарушены.</li>
                   <li>Успешное финальное событие: 7-часовой концерт прошёл без проблем при полном зале (400+ зрителей).</li>
                   <li>Беспрецедентная для «Сказок» медиа-кампания: создано отдельное <a href="https://vk.com/skazkixviii">сообщество в ВК</a>, набраны хорошие
                     показатели по активности и охватам (8100+ уникальных пользователей, 150000+ просмотров контента).</li>
                   <li>Была проведена экстенсивная кампания по сбору и анализу обратной связи: <a href="https://forms.gle/1msx5i1W8KMpHaoUA">общий опрос</a> среди участников и гостей, <a href="https://docs.google.com/spreadsheets/d/1vuEgKPyPOf6yNKFSh4ib4gQp5JSyR7a4u-I25NKoNzg/edit?usp=sharing">собрание режиссёров и организаторов</a>, а также ряд собраний организаторов.</li>
                   <li>93% участников отметили важность того, что они нашли на фестивале новых друзей, что подтверждает успешность адаптации.</li>
-                  <img id="skazki-survey-good-img" src={require('../assets/images/skazki-survey-good.png')} alt="thumbnail" width="100%"/>
-                </ul></p>
+                  
+                </ul><img id="skazki-survey-good-img" src={require('../assets/images/skazki-survey-good.png')} alt="thumbnail" width="100%"/></p>
 
                 <h2>Трудности, вызовы, проблемы</h2>
                 <div className="horizontal-line"></div>
@@ -178,8 +179,10 @@ function Project() {
                 <a className="note" href="https://t.me/prodKORSHUN">Видеограф — Артём Коршун</a>
             </div>
         </Modal>
-
+        
+        <div id="projects-to-scroll"></div>
         <h1>Мои проекты</h1>
+        
         <div className="horizontal-line margin-bottomDIV"></div>
         <div className="projects-grid" id="projects-projects-grid">
             <div className="project">

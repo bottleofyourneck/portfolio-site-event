@@ -13,6 +13,7 @@ function Contact() {
   return (
     <div id="contact">
       <div className="items-container" id="contacts-container">
+        <div id="contact-to-scroll"></div>
         <h1>Давайте свяжемся</h1>
         <div className="horizontal-line margin-bottomDIV" id="contact-div-margin-bot"></div>
 
@@ -45,6 +46,7 @@ function Contact() {
                 </div>
             </a>
         </div>
+        <div className="horizontal-line" id="last-hor-line"></div>
       </div>
     </div>
   );

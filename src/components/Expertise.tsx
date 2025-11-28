@@ -140,6 +140,7 @@ function Expertise() {
         </Modal>
 
         <div className="skills-container">
+            <div id="expertise-to-scroll"></div>
             <h1>Навыки</h1>
             <div className="horizontal-line margin-bottomDIV"></div>
             <div className="skills-grid">

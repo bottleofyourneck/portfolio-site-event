@@ -78,6 +78,7 @@ function Expertise() {
 
     <div className="container" id="about">
         <div className="skills-container">
+            <div id="about-to-scroll"></div>
             <h1>Обо мне</h1>
             <div className="horizontal-line margin-bottomDIV"></div>
             <div className="skills-grid">
@@ -226,6 +227,7 @@ function Expertise() {
 
     <div className="container" id="about-work">
       <div className="skills-container">
+            <div id="about-job-to-scroll"></div>
             <h1>О работе</h1>
             <div className="horizontal-line margin-bottomDIV"></div>
             <div className="skills-grid" id="about-job">
