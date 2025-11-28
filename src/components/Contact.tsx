@@ -20,7 +20,7 @@ function Contact() {
             <a href="mailto:dolgopolovdaniildmitrievich@gmail.com">
                 <div className="contact-wrapper">
                     <FontAwesomeIcon className="mail" icon={faEnvelope} size="2x"/>
-                    <p>dolgopolovdaniildmitrievich@gmail.com</p>
+                    <p>Почта</p>
                 </div>
             </a>
             
