@@ -204,6 +204,7 @@ h1 {
   overflow: auto;
   height: calc(100vh - 64px);
   margin-top: 64px;
+  overscroll-behavior: auto;
   
   /* For WebKit browsers (Chrome, Safari, Edge) */
   &::-webkit-scrollbar {
