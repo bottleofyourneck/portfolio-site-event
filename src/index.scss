@@ -79,8 +79,8 @@ a.light-mode {
 
 .navigation-bar-responsive {
   span, p {
-    color: #0d1116;
     font-family: "Lato", sans-serif;
+    font-size: 1.2em;
   }
 }
 
@@ -229,6 +229,23 @@ h1 {
   /* For Firefox */
   scrollbar-width: auto;
   scrollbar-color: #c1c1c1 transparent;
+}
+
+.dark-mode-drawer {
+  background-color: #0d1116 !important;
+  height: 100%;
+}
+
+.light-mode-drawer {
+  height: 100%;
+}
+
+.dark-mode-text-drawer {
+  color: white !important;
+}
+
+.light-mode-text-drawer {
+  color: #0d1116 !important;
 }
 
 @media screen {

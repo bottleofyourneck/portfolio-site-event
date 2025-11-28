@@ -58,14 +58,14 @@ function Navigation({parentToChild, modeChange}: any) {
   };
 
   const drawer = (
-    <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Меню</p>
+    <Box className={`navigation-bar-responsive ${mode === 'dark' ? 'dark-mode-drawer' : 'light-mode-drawer'}`} onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      <p className={`mobile-menu-top ${mode === 'dark' ? 'dark-mode-text-drawer' : 'light-mode-text-drawer'}`}><ListIcon/>Меню</p>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
-              <ListItemText primary={item[0]} />
+              <ListItemText primary={item[0]} className={`${mode === 'dark' ? 'dark-mode-text-drawer' : 'light-mode-text-drawer'}`}/>
             </ListItemButton>
           </ListItem>
         ))}
@@ -113,6 +113,7 @@ function Navigation({parentToChild, modeChange}: any) {
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
+          
         >
           {drawer}
         </Drawer>
