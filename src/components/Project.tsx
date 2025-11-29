@@ -198,7 +198,9 @@ function Project() {
                             }}
                           ></iframe>
                     </div>
-                    <a className="note" href="https://t.me/prodKORSHUN">Видеограф — Артём Коршун</a>
+                    <a className="note" href="https://t.me/prodKORSHUN">
+                    Видеограф — Артём Коршун
+                    </a>
                 </div>
                 <p>Моя роль — <b>руководитель проекта (Главный организатор)</b></p>
                 {/* <p>Полностью управлял проектом от разработки концепции до сбора обратной связи.</p>

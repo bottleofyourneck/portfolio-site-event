@@ -25,6 +25,20 @@ import React, {
     const visible = typeof props.visible === "undefined" ? true : props.visible;
   
     useEffect(() => {
+      let details = navigator.userAgent;
+      let regexp = /android|iphone|kindle|ipad/i;
+      let isMobileDevice = regexp.test(details);
+      console.log(details);
+      
+      if (isMobileDevice) {
+        document.body.classList.add("mobile-scroll");
+        document.getElementById("fade-in")!.classList.remove("desktop-scroll");
+      }
+      else {
+        document.body.classList.remove("mobile-scroll");
+        document.getElementById("fade-in")!.classList.add("desktop-scroll");
+      }
+
       let count = React.Children.count(props.children);
       if (!visible) {
         // Animate all children out
@@ -46,6 +60,8 @@ import React, {
       }, delay);
       return () => clearTimeout(timeout);
       // eslint-disable-next-line
+
+      
     }, [
       // eslint-disable-next-line
       React.Children.count(props.children),
@@ -53,10 +69,13 @@ import React, {
       maxIsVisible,
       visible,
       transitionDuration,
-    ]);
+    ]
+  
+  
+  );
   
     return (
-      <WrapperTag className={props.className}>
+      <WrapperTag id="fade-in" className={props.className}>
         {React.Children.map(props.children, (child, i) => {
           return (
             <ChildTag

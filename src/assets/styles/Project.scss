@@ -171,6 +171,20 @@
     display:block;
     margin-top: 1em;
     text-decoration: underline;
+
+    svg {
+      fill: #b1b1b1;
+      text-decoration: underline;
+      height: 27px;
+
+    }
+}
+
+.note:hover {
+  svg {
+    fill: #5000ca;
+    transition: fill .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
 }
 
 #desktop-pic {
