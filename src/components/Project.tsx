@@ -348,7 +348,7 @@ function Project() {
                     Видеограф — Артём Коршун
                     </a>
                 </div>
-                <p>Моя роль — <b>руководитель проекта (Главный организатор)</b></p>
+                <p>Моя роль — <b>руководитель проекта (главный организатор)</b></p>
                 <Button id="btn-project-more" variant="contained" onClick={() => {setIsSkazkiOpen(true); document.body.classList.add("no-scroll")}}> {/*onClick=sendMail*/}
                     Подробнее
                 </Button>
@@ -363,7 +363,7 @@ function Project() {
                 <div className="video-wrapper-wrapper">
                     <img id="project-main-osv-image" src={require('../assets/images/project-osv-2.jpg')} alt="thumbnail" width="100%"/>
                 </div>
-                <p>Моя роль — <b>куратор направления (Главный организатор)</b></p>
+                <p>Моя роль — <b>куратор направления (главный организатор)</b></p>
                 <Button id="btn-project-more" variant="contained" onClick={() => {setIsHackathonOpen(true); document.body.classList.add("no-scroll")}}> {/*onClick=sendMail*/}
                     Подробнее
                 </Button>
