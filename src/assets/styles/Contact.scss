@@ -1,5 +1,20 @@
 #contacts-container {
   display: block;
+  padding-bottom: 50px;
+
+  .image-wrapper {
+    z-index: 2;
+    margin-bottom: 17.6px;
+    img {
+        width: 200px;
+        border-radius: 50%;
+    }
+}
+}
+
+.another-wrapper {
+  display: flex;
+  gap: 30px;
 }
 
 #contact-div-margin-bot {
@@ -12,8 +27,9 @@
 }
 
 .contact-wrapper-wrapper {
+  padding-top: 25px;
   a {
-    display: inline-block;
+    display: flex;
     margin-right: 16px;
     height: 50px;
   }
@@ -104,4 +120,31 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+@media screen {
+  // @media (max-width: 1150px) {
+  //   #contacts-container .image-wrapper {
+  //         img {
+  //             width: 200px !important;
+  //         }
+  //     }
+  // }
+
+  @media (max-width: 567px) {
+    
+    .another-wrapper {
+      display: block !important;
+    }
+
+    .contact-wrapper-wrapper {
+      padding-top: 0px;
+      a {
+        display: inline-block;
+        margin-right: 16px;
+        height: 50px;
+      }
+    }
+    
+  }
 }
