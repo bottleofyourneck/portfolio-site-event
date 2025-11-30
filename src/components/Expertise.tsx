@@ -181,7 +181,7 @@ function Expertise() {
                 <div className="skill">
                 <FontAwesomeIcon className="marginIMG" icon={faPeopleArrows} size="3x" height="100%"/>
                     <h3>Гибкие навыки</h3>
-                    <p>Отношусь к этому не как к дополнению, а как к отдельной категории скиллов, которые влияют на тот результат, который я выдаю.</p>
+                    <p>Отношусь к этому не как к дополнению, а как к отдельной категории умений, которые влияют на результат, который я выдаю.</p>
                     <div className="flex-chips">
                         {/* <span className="chip-title">Посмотреть примеры:</span> */}
                         {labelsThird.map((label, index) => (

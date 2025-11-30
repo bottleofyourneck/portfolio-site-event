@@ -42,11 +42,37 @@
     height: 1px;
 }
 
+#btn-project-more {
+    margin-right: 17.6px;
+}
+
+#project-main-osv-image {
+    border-radius: 4px;
+}
+
+.margin-top-p {
+    margin-top: 2em !important;
+}
+
 .modalProjectContainer {
     overflow: auto;
     padding: 48px;
     padding-top: 36px;
     height: calc(100% - 75px);
+
+    button {
+      float: left;
+      background-color: white;
+      color: #050f0b;
+      margin-top: 5px;
+      margin-bottom: 16px;
+      padding: 6px 16px;
+    }
+    
+    button:hover {
+      background-color: #5000ca;
+      color: white;
+    }
 
     #firstP {
         margin-top: 2em;
