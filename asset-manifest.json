@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.83d38b88.css",
-    "main.js": "/static/js/main.da238dd5.js",
+    "main.css": "/static/css/main.859f1688.css",
+    "main.js": "/static/js/main.e0254a78.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/project-osv-1.png": "/static/media/project-osv-1.3d4622e5e016db60911e.png",
     "static/media/project-skazki.png": "/static/media/project-skazki.573126be0b2b0c9a0e60.png",
@@ -13,6 +13,7 @@
     "static/media/about-photo-1.png": "/static/media/about-photo-1.550c1b78fb3b0e646ebe.png",
     "static/media/skill-3-presentation.png": "/static/media/skill-3-presentation.268593739fe5af76e79f.png",
     "static/media/about-photo-3.png": "/static/media/about-photo-3.b110ab9341974eb209a5.png",
+    "static/media/about-pic.png": "/static/media/about-pic.376c2d26fa49b4424811.png",
     "static/media/skill-2-comm.png": "/static/media/skill-2-comm.de130b264715e9937c1d.png",
     "static/media/skill-6-form.png": "/static/media/skill-6-form.d7a248b53610d63b8b23.png",
     "static/media/skill-4-grant.png": "/static/media/skill-4-grant.30f10581243bab921e90.png",
@@ -31,12 +32,12 @@
     "static/media/arrow-up.png": "/static/media/arrow-up.6be3cd4c74e90e0cee18.png",
     "static/media/arrow-up-light.png": "/static/media/arrow-up-light.a594637fe951e0610672.png",
     "index.html": "/index.html",
-    "main.83d38b88.css.map": "/static/css/main.83d38b88.css.map",
-    "main.da238dd5.js.map": "/static/js/main.da238dd5.js.map",
+    "main.859f1688.css.map": "/static/css/main.859f1688.css.map",
+    "main.e0254a78.js.map": "/static/js/main.e0254a78.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83d38b88.css",
-    "static/js/main.da238dd5.js"
+    "static/css/main.859f1688.css",
+    "static/js/main.e0254a78.js"
   ]
 }
