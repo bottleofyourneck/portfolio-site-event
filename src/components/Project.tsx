@@ -19,6 +19,9 @@ function Project() {
 
     const [isSkazkiOpen, setIsSkazkiOpen] = useState(false);
     const [isHackathonOpen, setIsHackathonOpen] = useState(false);
+    const [isAktivProjectOpen, setIsAktivProjectOpen] = useState(false);
+
+    const [isProjectsExpandableOpen, setIsProjectsExpandableOpen] = useState(false);
 
     return(
     <div className="projects-container" id="projects">
@@ -325,11 +328,154 @@ function Project() {
                 <span className="clear"></span>
             </div>
         </Modal>
+
+        <Modal open={isAktivProjectOpen} onClose={() => {setIsAktivProjectOpen(false); document.body.classList.remove("no-scroll")}}>
+            <div className="modalStatic">
+                <Button onClick={() => {setIsAktivProjectOpen(false); document.body.classList.remove("no-scroll")}}>
+                    <FontAwesomeIcon icon={faCircleXmark} size="2x"/>
+                </Button>
+                <h2>Изменения СО</h2>
+            </div>
+            
+            <div className="modalProjectContainer">
+
+                <h2 id="firsth2-no-margin">Описание</h2>
+                <div className="horizontal-line"></div>
+
+                <p id="firstP">Фестиваль «Студенческая весна» — самое масштабное событие молодёжной политики Тюменской области,
+                  в рамках которого студенты и выпускники колледжей и университетов со всего региона раскрывают свои таланты
+                  в таких направлениях как: концертные программы, танцевальное, музыкальное,
+                  интеллектуальные игры, SMM-проект, <b>хакатон</b> и пр.</p>
+
+                <Button id="btn-project-more" variant="contained" onClick={() => {window.open("https://студвесна72.рф")}} onAuxClick={() => {window.open("https://студвесна72.рф")}}> {/*onClick=sendMail*/}
+                    Сайт
+                </Button>
+                <Button variant="contained" onClick={() => {window.open("https://vk.com/studvesna_72")}} onAuxClick={() => {window.open("https://vk.com/studvesna_72")}}> {/*onClick=sendMail*/}
+                    Медиа
+                </Button>
+                <span className="clear"></span>
+
+                <p>Команда организаторов фестиваля состоит из дирекции и кураторов направлений (главные организаторы отдельных мероприятий).</p>
+
+                <h3>Моя роль</h3>
+                <p>Куратор направления (главный организатор)</p>
+
+                <h3>Даты</h3>
+                <p><ul>
+                  <li>Февраль 2025: начало подготовки</li>
+                  <li>5 апреля 2025: открытие</li>
+                  <li>6 апреля 2025: защита</li>
+                </ul></p>
+                
+
+                <h3>Площадка</h3>
+                <p>Водонапорная башня (г. Тюмень, ул. Орджоникидзе, 56 к2)</p>
+
+                <h3>Ключевые цифры</h3>
+                <p><ul>
+                    <li>75+ участников</li>
+                    <li>1 месяц: длительность проекта (подготовка + реализация)</li>
+                    <li>8 часов: суммарное время мероприятий</li>
+                </ul></p>
+                
+                <h2>Задачи и реализация</h2>
+                <div className="horizontal-line"></div>
+
+                <h3>Стратегия и планирование</h3>
+                <p>В прошлые годы хакатон проводился полностью в онлайн-формате. Несмотря на крайне ограниченное время, я решил разработать новый гибридный формат.</p>
+                <p>Задача — с нуля разработать концепцию продуктового хакатона.</p>
+                <p>Что я сделал:</p>
+                <p><ul>
+                  <li>Изучил мировой опыт организации хакатонов и кейс-чемпионатов.</li>
+                  <li>Связался с предыдущими организаторами, изучил опыт прошлых лет.</li>
+                  <li>Провёл собрание с командой для определения концепции хакатона. Была выбрана площадка и разработан гибридный формат с открытием и закрытием.</li>
+                </ul></p>
+
+                <h3>Формирование команды и управление</h3>
+                <p>Задача — найти 2-3 помощников для операционных задач.</p>
+                <p>Что я сделал:</p>
+                <p><ul>
+                  <li>Лично отобрал: двух помощников, ведущего и куратора экспертов.</li>
+                  <li>Распределил зоны ответственности и основные задачи внутри команды.</li>
+                </ul></p>
+                
+                <h3>Бюджет</h3>
+                <p>Задача — получить от заказчика финансирование проекта.</p>
+                <p>Что я сделал:</p>
+                <p><ul>
+                  <li>Написал смету и согласовал с заказчиком.</li>
+                  <li>Написал договор и согласовал с заказчиком.</li>
+                  <li>Получил и распределил средства.</li>
+                  <li>Написал отчёт по итогам мероприятия.</li>
+                </ul></p>
+
+                <h3>Операционное управление и логистика</h3>
+                <p>Задача — настроить системную работу процессов фестиваля.
+                </p>
+                <p>Что я сделал:</p>
+                <p><ul>
+                  <li>Забронировал площадку на нужные даты.</li>
+                  <li>Организовал перемещение реквизита.</li>
+                  <li>Организовал коммуникацию между участниками и организаторами в телеграм-чате.</li>
+                  <li>Проработал и согласовал с работу служб фестиваля на своём направлении: кейтеринг, медиа, монтаж площадки, печать дипломов, закупка подарков, питьевой режим.</li>
+                  <li>Совместно с ведущим проработал <a href="https://docs.google.com/document/d/1rFS2_8C0ECptXMte4fkiPJyJ8nYNez4Shn-5uoQANmQ/edit?usp=sharing">сценарий открытия</a>.</li>
+                </ul></p>
+
+                <h2>Результаты</h2>
+                <div className="horizontal-line"></div>
+
+                <p><ul id="margin-bottom-horizontal-line">
+                  <li>Проект реализован за короткий срок: всё прошло в нужные даты, тайминги не были нарушены.</li>
+                  <li>Эксперты отметили активность участников и хорошую работу организаторов.</li>
+                  <li>95% опрошенных участников оценили мероприятие на 5 из 5.</li>
+                  <li>Заказчик доволен результатами.</li>                  
+                </ul></p>
+
+                <h2>Трудности, вызовы, проблемы</h2>
+                <div className="horizontal-line"></div>
+
+                <h3>Вовремя не доставили бейджи участников на площадку</h3>
+                <p>Я предусмотрел вход по паспорту по списку, а бейджи были выданы участникам в другой удобный момент.</p>
+                
+                <h3>Кейтеринг приехал невовремя</h3>
+                <p>Я перестроил хронологию мероприятия на ходу, чтобы было удобно и участникам, и экспертам, и волонтёрам.
+                </p>
+
+                <h3>В последний момент не приехала служба монтажа площадки</h3>
+                <p>Я самостоятельно привёз и установил оборудование.
+                </p>
+
+                <h3>Привезли диплом с опечаткой</h3>
+                <p>Я самостоятельно распечатал и отвёз диплом человеку в удобные для него день и место, а участник остался доволен.
+                </p>
+
+                <p className="margin-top-p">По итогам пост-анализа я сделал вывод, что все форс-мажоры так или иначе были следствием плохой коммуникации и нечётких договорённостей.</p>
+
+                
+
+                <h2>Чему я научился</h2>
+                <div className="horizontal-line"></div>
+
+                <p id="firstP2"><ul>
+                  <li>Получил первый опыт большой организации полного цикла в роли руководителя.</li>
+                  <li>Научился работать в условиях ограниченного времени.</li>
+                  <li>Получил первый лидерский опыт: именно от меня зависело настроение команды и участников.</li>
+                  <li>Вывел принцип работы с подрядчиками: организатору подрядчик важнее, чем подрядчику организатор. Т.е. задача именно организатора сделать всё для того, чтобы все нужные службы приехали во все нужные места в нужное время.</li>
+                  <li>Научился совмещать обучение в университете с масштабным проектом: понял важность тайм- и таск-менеджмента, хорошего сна и рациона питания, и в целом собственного настроения.</li>
+                </ul></p>
+
+                <img style={{marginTop: '16px'}} src={require('../assets/images/project-osv-3.jpg')} alt="thumbnail" width="100%"/>
+                <Button variant="contained" onClick={() => {window.open("https://vk.com/album-89511047_305740019")}} onAuxClick={() => {window.open("https://vk.com/album-89511047_305740019")}}> {/*onClick=sendMail*/}
+                    Больше фото
+                </Button>
+                <span className="clear"></span>
+            </div>
+        </Modal>
         
         <div id="projects-to-scroll"></div>
         <h1>Мои проекты</h1>
         
-        <div className="horizontal-line margin-bottomDIV"></div>
+        <div id="first-line-projects" className="horizontal-line margin-bottomDIV"></div>
         <div className="projects-grid" id="projects-projects-grid">
             <div className="project">
                 <h2 id="no-hver"  className="marginIMG">Фестиваль театральных постановок «Сказки XVIII» (2025)</h2>
@@ -370,6 +516,57 @@ function Project() {
                 <span className="clear"></span>
             </div>
         </div>
+
+        {/* <div className="small-projects-wrapper">
+            <h2>Другие проекты</h2>
+            <div className="expandable-card">
+                {!isProjectsExpandableOpen && <>
+                    <div 
+                        className="expand-button"
+                        onClick={() => setIsProjectsExpandableOpen(true)}
+                    >
+                        <div className="horizontal-line"></div>
+                        {document.getElementById('portal')?.classList.contains('light-mode') && 
+                            <img id="arrow-img" src={require("../assets/images/arrow-down.png")} alt="collapse" />
+                        }
+                        {!document.getElementById('portal')?.classList.contains('light-mode') && 
+                            <img id="arrow-img" src={require("../assets/images/arrow-down-light.png")} alt="collapse" />
+                        }
+                    </div>
+                </>}
+                
+                
+                {isProjectsExpandableOpen && (
+                    <div className="projects-grid">
+                        <div className="project">
+                            <h3 id="no-hver"  className="marginIMG">Преобразования в Совете обучающихся Школы компьютерных наук ТюмГУ (2025)</h3>
+                            <p>Моя роль — <b>инициатор движения, член президиума СО</b></p>
+                            <Button id="btn-project-more" variant="contained" onClick={() => {setIsAktivProjectOpen(true); document.body.classList.add("no-scroll")}}>
+                                Подробнее
+                            </Button>
+                            <span className="clear"></span>
+                        </div>
+        
+                        
+                    </div>
+                )}
+                
+                {isProjectsExpandableOpen && <>
+                    <div 
+                        className="expand-button"
+                        onClick={() => setIsProjectsExpandableOpen(false)}
+                    >
+                        <div className="horizontal-line"></div>
+                        {document.getElementById('portal')?.classList.contains('light-mode') && 
+                            <img id="arrow-img" src={require("../assets/images/arrow-up.png")} alt="collapse" />
+                        }
+                        {!document.getElementById('portal')?.classList.contains('light-mode') && 
+                            <img id="arrow-img" src={require("../assets/images/arrow-up-light.png")} alt="collapse" />
+                        }
+                    </div>
+                </>}
+            </div>
+        </div> */}
     </div>
     );
 }

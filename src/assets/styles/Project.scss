@@ -1,3 +1,42 @@
+#firsth2-no-margin {
+    margin-top: 24px;
+}
+
+#first-line-projects {
+    margin-bottom: 55.2px;
+}
+
+.small-projects-wrapper {
+    width: clamp(80%, 800px, 100%);
+
+    #arrow-img {
+      object-fit: contain;
+    }
+
+    .projects-grid {
+      grid-gap: 35px !important;
+    }
+
+    .project {
+      margin-bottom: 25px;
+    }
+
+    button {
+      float: left;
+      background-color: white;
+      color: #050f0b;
+      margin-top: 5px;
+  }
+  button:hover {
+    background-color: #5000ca;
+    color: white;
+  }
+
+    .expand-button {
+      margin-bottom: 30px;
+    }
+}
+
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -8,7 +47,7 @@
 .projects-container .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    // grid-gap: 50px;
 }
   
 .projects-container .projects-grid .project {
