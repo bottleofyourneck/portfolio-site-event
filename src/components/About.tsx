@@ -275,6 +275,9 @@ function Expertise() {
                     <h3 className="marginH2">Оплата</h3>
                     <p>Средняя по рынку.</p>
                     <div className="horizontal-line"></div>
+                    <h3 className="marginH2">Дислокация</h3>
+                    <p>Живу в Тюмени, готов рассмотреть удалённый формат работы или переезд.</p>
+                    <div className="horizontal-line"></div>
                     <h3 className="marginH2">Командировки</h3>
                     <p>Не против, и наоборот, очень хочу поездить.</p>
                     <div className="horizontal-line"></div>
