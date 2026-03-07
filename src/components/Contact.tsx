@@ -18,7 +18,7 @@ function Contact() {
         <div className="horizontal-line margin-bottomDIV" id="contact-div-margin-bot"></div>
         <div className="another-wrapper">
             <div className="image-wrapper">
-              <img src={require('../assets/images/about-pic.png')}/>
+              <img src={require('../assets/images/profile-pic.png')}/>
             </div>
             <div className="contact-wrapper-wrapper">
               <a href="mailto:dolgopolovdaniildmitrievich@gmail.com">

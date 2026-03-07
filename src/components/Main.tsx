@@ -9,7 +9,7 @@ function Main() {
     <div className="container" id="first-container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src={require('../assets/images/profile-pic.png')}/>
+          <img src={require('../assets/images/about-pic.png')}/>
         </div>
         <div className="content">
           <div className="social_icons">
@@ -27,7 +27,7 @@ function Main() {
             </a>
           </div>
           <h1>Даниил Долгополов</h1>
-          <p>Руководитель проектов</p>
+          <p>Менеджер проектов</p>
           <p>Организатор мероприятий</p>
           <p id="mainNote">В активном поиске работы</p> 
 

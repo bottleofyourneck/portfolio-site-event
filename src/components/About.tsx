@@ -232,10 +232,10 @@ function Expertise() {
             <div className="horizontal-line margin-bottomDIV"></div>
             <div className="skills-grid" id="about-job">
                 <div className="skill">
-                    <Button id="button-my-vision" variant="contained" onClick={() => {setIsVisionOpen(true); document.body.classList.add("no-scroll")}}> {/*onClick=sendMail*/}
+                    {/* <Button id="button-my-vision" variant="contained" onClick={() => {setIsVisionOpen(true); document.body.classList.add("no-scroll")}}>
                         Моё видение мероприятий
                     </Button>
-                    <span className="clear"></span>
+                    <span className="clear"></span> */}
 
                     <h3>Мои сильные качества</h3>
                     <div className="flex-chips">
@@ -269,9 +269,9 @@ function Expertise() {
                     <h3>Занятость</h3>
                     <p>Для меня в приоритете проектная занятость, но я готов рассмотреть фулл-тайм.</p>
                     <div className="horizontal-line"></div>
-                    <h3 className="marginH2">Официальное трудоустройство</h3>
+                    {/* <h3 className="marginH2">Официальное трудоустройство</h3>
                     <p>Без разницы.</p>
-                    <div className="horizontal-line"></div>
+                    <div className="horizontal-line"></div> */}
                     <h3 className="marginH2">Оплата</h3>
                     <p>Средняя по рынку.</p>
                     <div className="horizontal-line"></div>
