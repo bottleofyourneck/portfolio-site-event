@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9314c46.css",
-    "main.js": "/static/js/main.76248f8f.js",
+    "main.css": "/static/css/main.7106fac8.css",
+    "main.js": "/static/js/main.29ffe894.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/project-osv-1.png": "/static/media/project-osv-1.060b145e63f1cc4d5330.png",
     "static/media/project-skazki.png": "/static/media/project-skazki.b2b04f1bf5af4cda85e9.png",
@@ -19,6 +19,10 @@
     "static/media/about-photo-2.png": "/static/media/about-photo-2.afb1c381c753303d118e.png",
     "static/media/skill-4-grant.png": "/static/media/skill-4-grant.8e3d865e41d1aa746183.png",
     "static/media/skill-1-lom.png": "/static/media/skill-1-lom.8adfa26360e23b455d8d.png",
+    "static/media/arrow-up-light.png": "/static/media/arrow-up-light.9e0080d7c24c000a1f2c.png",
+    "static/media/arrow-down-light.png": "/static/media/arrow-down-light.8b10652eb775aef3455b.png",
+    "static/media/arrow-up.png": "/static/media/arrow-up.e3a51fda9a14a270c148.png",
+    "static/media/arrow-down.png": "/static/media/arrow-down.bcbfbfed70c8c1b342af.png",
     "static/media/skill-2-doc.png": "/static/media/skill-2-doc.5c0532afc50497604807.png",
     "static/media/skill-1-plan.png": "/static/media/skill-1-plan.7c529b323114125d8489.png",
     "static/media/skill-3-comm.png": "/static/media/skill-3-comm.c663fffb947c2212f9d2.png",
@@ -27,17 +31,13 @@
     "static/media/skill-5-visual.png": "/static/media/skill-5-visual.cbbad12cc3a9b3bd9afe.png",
     "static/media/media-ohvat.jpg": "/static/media/media-ohvat.b0710d14d92e92e9afcd.jpg",
     "static/media/skazki-survey-good.png": "/static/media/skazki-survey-good.65aed291fc5945c9326d.png",
-    "static/media/arrow-down.png": "/static/media/arrow-down.835255607e010ee0c2a2.png",
-    "static/media/arrow-down-light.png": "/static/media/arrow-down-light.f7437a6d1a502790ca53.png",
-    "static/media/arrow-up.png": "/static/media/arrow-up.6be3cd4c74e90e0cee18.png",
-    "static/media/arrow-up-light.png": "/static/media/arrow-up-light.a594637fe951e0610672.png",
     "index.html": "/index.html",
-    "main.d9314c46.css.map": "/static/css/main.d9314c46.css.map",
-    "main.76248f8f.js.map": "/static/js/main.76248f8f.js.map",
+    "main.7106fac8.css.map": "/static/css/main.7106fac8.css.map",
+    "main.29ffe894.js.map": "/static/js/main.29ffe894.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9314c46.css",
-    "static/js/main.76248f8f.js"
+    "static/css/main.7106fac8.css",
+    "static/js/main.29ffe894.js"
   ]
 }
