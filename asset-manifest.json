@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.7106fac8.css",
-    "main.js": "/static/js/main.29ffe894.js",
+    "main.css": "/static/css/main.1039c46d.css",
+    "main.js": "/static/js/main.a45e8817.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/project-aktiv-title.png": "/static/media/project-aktiv-title.a3fd3b6c7ece175be3e3.png",
     "static/media/project-osv-1.png": "/static/media/project-osv-1.060b145e63f1cc4d5330.png",
     "static/media/project-skazki.png": "/static/media/project-skazki.b2b04f1bf5af4cda85e9.png",
     "static/media/project-skazki-11.png": "/static/media/project-skazki-11.378b698dcd883b8ba542.png",
@@ -32,12 +33,12 @@
     "static/media/media-ohvat.jpg": "/static/media/media-ohvat.b0710d14d92e92e9afcd.jpg",
     "static/media/skazki-survey-good.png": "/static/media/skazki-survey-good.65aed291fc5945c9326d.png",
     "index.html": "/index.html",
-    "main.7106fac8.css.map": "/static/css/main.7106fac8.css.map",
-    "main.29ffe894.js.map": "/static/js/main.29ffe894.js.map",
+    "main.1039c46d.css.map": "/static/css/main.1039c46d.css.map",
+    "main.a45e8817.js.map": "/static/js/main.a45e8817.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7106fac8.css",
-    "static/js/main.29ffe894.js"
+    "static/css/main.1039c46d.css",
+    "static/js/main.a45e8817.js"
   ]
 }
