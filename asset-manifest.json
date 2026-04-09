@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.1039c46d.css",
-    "main.js": "/static/js/main.a45e8817.js",
+    "main.css": "/static/css/main.02b503fe.css",
+    "main.js": "/static/js/main.fe07223e.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
-    "static/media/project-aktiv-title.png": "/static/media/project-aktiv-title.a3fd3b6c7ece175be3e3.png",
+    "static/media/project-aktiv-title.png": "/static/media/project-aktiv-title.72eacd87b18f27f4503c.png",
     "static/media/project-osv-1.png": "/static/media/project-osv-1.060b145e63f1cc4d5330.png",
     "static/media/project-skazki.png": "/static/media/project-skazki.b2b04f1bf5af4cda85e9.png",
+    "static/media/project-aktiv-9.png": "/static/media/project-aktiv-9.0f3b37c43bd34287a46d.png",
     "static/media/project-skazki-11.png": "/static/media/project-skazki-11.378b698dcd883b8ba542.png",
     "static/media/profile-pic.png": "/static/media/profile-pic.dd19e4e3c8f77bb6a5c5.png",
     "static/media/project-osv-3.jpg": "/static/media/project-osv-3.a5d1f8661f8b3e97bcd3.jpg",
     "static/media/project-osv-2.jpg": "/static/media/project-osv-2.f8340ddba2d621d41e7e.jpg",
     "static/media/project-skazki-4.jpg": "/static/media/project-skazki-4.1170edb30bbe61075d82.jpg",
+    "static/media/project-aktiv-1.png": "/static/media/project-aktiv-1.182840f005b7c80771fc.png",
     "static/media/skill-3-presentation.png": "/static/media/skill-3-presentation.f5bb4cec9cc073a703ec.png",
     "static/media/about-pic.png": "/static/media/about-pic.19fc38c6b3b7d14d0214.png",
     "static/media/about-photo-1.png": "/static/media/about-photo-1.916e77a9a145712175ec.png",
+    "static/media/project-aktiv-5.png": "/static/media/project-aktiv-5.07f8ad9a4d04579f4c26.png",
     "static/media/about-photo-3.png": "/static/media/about-photo-3.a4f8a95e9ab367478ab8.png",
     "static/media/skill-2-comm.png": "/static/media/skill-2-comm.4fd162ef630a68d9aee4.png",
     "static/media/skill-6-form.png": "/static/media/skill-6-form.dbc4ae8b4639cf60d15a.png",
@@ -24,7 +27,11 @@
     "static/media/arrow-down-light.png": "/static/media/arrow-down-light.8b10652eb775aef3455b.png",
     "static/media/arrow-up.png": "/static/media/arrow-up.e3a51fda9a14a270c148.png",
     "static/media/arrow-down.png": "/static/media/arrow-down.bcbfbfed70c8c1b342af.png",
+    "static/media/project-aktiv-4.png": "/static/media/project-aktiv-4.83cc436356b459e36983.png",
     "static/media/skill-2-doc.png": "/static/media/skill-2-doc.5c0532afc50497604807.png",
+    "static/media/project-aktiv-7.png": "/static/media/project-aktiv-7.d6bcb3761da4e9af29b7.png",
+    "static/media/project-aktiv-8.png": "/static/media/project-aktiv-8.b86fe9c6024196dc9ae4.png",
+    "static/media/project-aktiv-2.png": "/static/media/project-aktiv-2.51e2afd5a9f930b1951e.png",
     "static/media/skill-1-plan.png": "/static/media/skill-1-plan.7c529b323114125d8489.png",
     "static/media/skill-3-comm.png": "/static/media/skill-3-comm.c663fffb947c2212f9d2.png",
     "static/media/skill-7-scenario.png": "/static/media/skill-7-scenario.9943a341afe021f2210d.png",
@@ -33,12 +40,12 @@
     "static/media/media-ohvat.jpg": "/static/media/media-ohvat.b0710d14d92e92e9afcd.jpg",
     "static/media/skazki-survey-good.png": "/static/media/skazki-survey-good.65aed291fc5945c9326d.png",
     "index.html": "/index.html",
-    "main.1039c46d.css.map": "/static/css/main.1039c46d.css.map",
-    "main.a45e8817.js.map": "/static/js/main.a45e8817.js.map",
+    "main.02b503fe.css.map": "/static/css/main.02b503fe.css.map",
+    "main.fe07223e.js.map": "/static/js/main.fe07223e.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1039c46d.css",
-    "static/js/main.a45e8817.js"
+    "static/css/main.02b503fe.css",
+    "static/js/main.fe07223e.js"
   ]
 }
