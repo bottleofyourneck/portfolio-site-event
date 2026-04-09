@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.02b503fe.css",
-    "main.js": "/static/js/main.fe07223e.js",
+    "main.js": "/static/js/main.b8a0de66.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/project-aktiv-title.png": "/static/media/project-aktiv-title.72eacd87b18f27f4503c.png",
     "static/media/project-osv-1.png": "/static/media/project-osv-1.060b145e63f1cc4d5330.png",
@@ -41,11 +41,11 @@
     "static/media/skazki-survey-good.png": "/static/media/skazki-survey-good.65aed291fc5945c9326d.png",
     "index.html": "/index.html",
     "main.02b503fe.css.map": "/static/css/main.02b503fe.css.map",
-    "main.fe07223e.js.map": "/static/js/main.fe07223e.js.map",
+    "main.b8a0de66.js.map": "/static/js/main.b8a0de66.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02b503fe.css",
-    "static/js/main.fe07223e.js"
+    "static/js/main.b8a0de66.js"
   ]
 }
