@@ -11,10 +11,16 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Contact() {
 
   return (
-    <div id="contact">
+    <div id="contact"><div className="space-between-sections"></div>
       <div className="items-container" id="contacts-container">
         <div id="contact-to-scroll"></div>
-        <h1>Контакты</h1>
+		{document.getElementById('portal')?.classList.contains('light-mode') && 
+			<h1 className="big-h1">Давайте <span className="green-text-light">свяжемся</span></h1>
+		}
+		{!document.getElementById('portal')?.classList.contains('light-mode') && 
+			<h1 className="big-h1">Давайте <span className="green-text">свяжемся</span></h1>
+		}
+        
         <div className="horizontal-line margin-bottomDIV" id="contact-div-margin-bot"></div>
         <div className="another-wrapper">
             <div className="image-wrapper">
@@ -52,8 +58,9 @@ function Contact() {
         </div>
         
         {/* <div className="horizontal-line" id="last-hor-line"></div> */}
-      </div>
+      </div><div className="space-between-sections"></div>
     </div>
+	
   );
 }
 

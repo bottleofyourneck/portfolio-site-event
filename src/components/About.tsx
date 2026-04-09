@@ -76,10 +76,17 @@ function Expertise() {
         </div>
     </Modal>
 
-    <div className="container" id="about">
-        <div className="skills-container">
+
+    <div className="container" id="about"><div className="space-between-sections"></div>
+        <div className="skills-container" id="second-skills-container">
             <div id="about-to-scroll"></div>
-            <h1>Обо мне</h1>
+			{document.getElementById('portal')?.classList.contains('light-mode') && 
+				<h1 className="big-h1">Обо <span className="green-text-light">мне</span></h1>
+			}
+			{!document.getElementById('portal')?.classList.contains('light-mode') && 
+				<h1 className="big-h1">Обо <span className="green-text">мне</span></h1>
+			}
+            
             <div className="horizontal-line margin-bottomDIV"></div>
             <div className="skills-grid">
                 <div className="skill">
@@ -126,6 +133,8 @@ function Expertise() {
                         </>}
                     </div>
                 </div>
+
+				<div className="another-gap"></div>
 
                 <div className="skill">
                     <img className="marginIMG" src={require("../assets/images/about-photo-2.png")}></img>
@@ -174,6 +183,8 @@ function Expertise() {
                     </div>
                 </div>
 
+				<div className="another-gap"></div>
+
                 <div className="skill">
                     <img className="marginIMG" src={require("../assets/images/about-photo-3.png")}></img>
                     <h3>Интересы и хобби</h3>
@@ -220,15 +231,25 @@ function Expertise() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div><div className="space-between-sections"></div>
     </div>
 
     
-
+	{document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ visibility: "visible"}}></div>
+	}
+	{!document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", visibility: "visible"}}></div>
+	}
     <div className="container" id="about-work">
       <div className="skills-container">
             <div id="about-job-to-scroll"></div>
-            <h1>О работе</h1>
+			{document.getElementById('portal')?.classList.contains('light-mode') && 
+				<h1 className="big-h1">О <span className="green-text-light">работе</span></h1>
+			}
+			{!document.getElementById('portal')?.classList.contains('light-mode') && 
+				<h1 className="big-h1">О <span className="green-text">работе</span></h1>
+			}
             <div className="horizontal-line margin-bottomDIV"></div>
             <div className="skills-grid" id="about-job">
                 <div className="skill">
@@ -246,50 +267,58 @@ function Expertise() {
                     </div>
                     <div className="horizontal-line marginDIV"></div>
 
-                    <h3 className="marginH2">Чем я <u>хочу</u> заниматься</h3>
+                    <h3 className="marginH2">Чем я хочу заниматься</h3>
                     <div className="flex-chips">
                         {/* <span className="chip-title">Посмотреть примеры:</span> */}
                         {labelsDo.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
-                    <div className="horizontal-line marginDIV"></div>
+                    <div className="horizontal-line marginDIV mobile-only-line"></div>
 
-                    <h3 className="marginH2">Чем я <u>не</u> хочу заниматься</h3>
+                    {/* <h3 className="marginH2">Чем я <u>не</u> хочу заниматься</h3>
                     <div className="flex-chips">
-                        {/* <span className="chip-title">Посмотреть примеры:</span> */}
                         {labelsNotDo.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
-                    <div className="horizontal-line marginDIV"></div>
+                    <div className="horizontal-line marginDIV"></div> */}
                 </div>
 
                 <div className="skill">
-                    <h3>Занятость</h3>
+					<h3 className="only-mobile-margin-H2">Позиция</h3>
+					<p>Рассматриваю варианты: проектный менеджер, ивент-менеджер, волонтёр, координатор, комьюнити-менеджер, администратор.</p>
+					<div className="horizontal-line"></div>
+                    <h3 className="marginH2">Занятость</h3>
                     <p>Для меня в приоритете проектная занятость, но я готов рассмотреть фулл-тайм.</p>
                     <div className="horizontal-line"></div>
                     {/* <h3 className="marginH2">Официальное трудоустройство</h3>
                     <p>Без разницы.</p>
                     <div className="horizontal-line"></div> */}
-                    <h3 className="marginH2">Оплата</h3>
-                    <p>Средняя по рынку.</p>
-                    <div className="horizontal-line"></div>
+                    {/* <h3 className="marginH2">Оплата</h3>
+                    <p>Средняя по рынку.</p> */}
+                    {/* <div className="horizontal-line"></div> */}
                     <h3 className="marginH2">Дислокация</h3>
                     <p>Живу в Тюмени, готов рассмотреть удалённый формат работы или переезд.</p>
                     <div className="horizontal-line"></div>
                     <h3 className="marginH2">Командировки</h3>
-                    <p>Не против, и наоборот, очень хочу поездить.</p>
-                    <div className="horizontal-line"></div>
-                    <h3 className="marginH2">Работа по выходным / вне рабочих часов</h3>
-                    <p>Не в рутинном режиме. Когда этого требует проект (мероприятие через неделю/завтра) — ок.</p>
-                    <div className="horizontal-line"></div>
-                    <h3 className="marginH2">Отношение к созвонам</h3>
-                    <p>Не люблю, когда это превращается в формальность. Созвоны ради созвонов — трата времени всех участников. Если же обсуждаются важные вещи — только за.</p>
+                    <p>Не против, и наоборот, очень хочу поездить. Также с радостью поучаствовал бы в международных проектах.</p>
+                    {/* <div className="horizontal-line"></div> */}
+                    {/* <h3 className="marginH2">Работа по выходным / вне рабочих часов</h3>
+                    <p>Не в рутинном режиме. Когда этого требует проект (мероприятие через неделю/завтра) — ок.</p> */}
+                    {/* <div className="horizontal-line"></div> */}
+                    {/* <h3 className="marginH2">Отношение к созвонам</h3>
+                    <p>Не люблю, когда это превращается в формальность. Созвоны ради созвонов — трата времени всех участников. Если же обсуждаются важные вещи — только за.</p> */}
                 </div>
             </div>
         </div>
     </div>
+	{document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ visibility: "visible"}}></div>
+	}
+	{!document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", visibility: "visible"}}></div>
+	}
     </>
     
     );

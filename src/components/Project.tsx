@@ -17,6 +17,66 @@ import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Project() {
 
+	const handleMiddleClickSiteHacathon = (e: any) => {
+    // Check if the clicked button is specifically the middle wheel (1)
+    if (e.button === 1) {
+      // Optional: Prevent the browser's default auto-scroll icon from appearing
+      e.preventDefault(); 
+      
+      window.open("https://студвесна72.рф")
+    }
+  };
+
+  const handleMiddleClickAktivPresentation = (e: any) => {
+    // Check if the clicked button is specifically the middle wheel (1)
+    if (e.button === 1) {
+      // Optional: Prevent the browser's default auto-scroll icon from appearing
+      e.preventDefault(); 
+      
+      window.open("https://drive.google.com/file/d/13hVWW0HBBV18srlr8RJB6EkCcNN69L90/view?usp=sharinghttps://drive.google.com/file/d/13hVWW0HBBV18srlr8RJB6EkCcNN69L90/view?usp=sharing")
+    }
+  };
+
+  const handleMiddleClickMediaHacathon = (e: any) => {
+    // Check if the clicked button is specifically the middle wheel (1)
+    if (e.button === 1) {
+      // Optional: Prevent the browser's default auto-scroll icon from appearing
+      e.preventDefault(); 
+      
+      window.open("https://vk.com/studvesna_72")
+    }
+  };
+
+  const handleMiddleClickMediaSkazki = (e: any) => {
+    // Check if the clicked button is specifically the middle wheel (1)
+    if (e.button === 1) {
+      // Optional: Prevent the browser's default auto-scroll icon from appearing
+      e.preventDefault(); 
+      
+      window.open("https://vk.com/skazkixviii")
+    }
+  };
+
+  const handleMiddleClickMediaAktiv = (e: any) => {
+    // Check if the clicked button is specifically the middle wheel (1)
+    if (e.button === 1) {
+      // Optional: Prevent the browser's default auto-scroll icon from appearing
+      e.preventDefault(); 
+      
+      window.open("https://vk.com/scs_utmn")
+    }
+  };
+
+  const handleMiddleClickMorePhotoHacathon = (e: any) => {
+    // Check if the clicked button is specifically the middle wheel (1)
+    if (e.button === 1) {
+      // Optional: Prevent the browser's default auto-scroll icon from appearing
+      e.preventDefault(); 
+      
+      window.open("https://vk.com/album-89511047_305740019")
+    }
+  };
+
     const [isSkazkiOpen, setIsSkazkiOpen] = useState(false);
     const [isHackathonOpen, setIsHackathonOpen] = useState(false);
     const [isAktivProjectOpen, setIsAktivProjectOpen] = useState(false);
@@ -24,7 +84,7 @@ function Project() {
     const [isProjectsExpandableOpen, setIsProjectsExpandableOpen] = useState(false);
 
     return(
-    <div className="projects-container" id="projects">
+    <div className="projects-container" id="projects"><div className="space-between-sections"></div>
         <Modal open={isSkazkiOpen} onClose={() => {setIsSkazkiOpen(false); document.body.classList.remove("no-scroll")}}>
             <div className="modalStatic">
                 <Button onClick={() => {setIsSkazkiOpen(false); document.body.classList.remove("no-scroll")}}>
@@ -62,9 +122,9 @@ function Project() {
                 <p><ul>
                     <li>400+ участников</li>
                     <li>150+ гостей концерта</li>
-                    <li>4 месяца: длительность проекта (подготовка + реализация)</li>
+                    <li>5 месяцев: длительность проекта (подготовка + реализация)</li>
                     <li>30 часов: суммарное время мероприятий</li>
-                    <li>~8100 охват <a href="https://vk.com/skazkixviii">медиа-сообщества</a></li>
+                    <li>~8100 охват <u><a href="https://vk.com/skazkixviii">медиа-сообщества</a></u></li>
                 </ul></p>
                 
                 <img src={require('../assets/images/media-ohvat.jpg')} alt="thumbnail" width="100%"/>
@@ -204,10 +264,10 @@ function Project() {
                   в таких направлениях как: концертные программы, танцевальное, музыкальное,
                   интеллектуальные игры, SMM-проект, <b>хакатон</b> и пр.</p>
 
-                <Button id="btn-project-more" variant="contained" onClick={() => {window.open("https://студвесна72.рф")}} onAuxClick={() => {window.open("https://студвесна72.рф")}}> {/*onClick=sendMail*/}
+                <Button id="btn-project-more" variant="contained" onClick={() => {window.open("https://студвесна72.рф")}} onMouseDown={handleMiddleClickSiteHacathon}> {/*onClick=sendMail*/}
                     Сайт
                 </Button>
-                <Button variant="contained" onClick={() => {window.open("https://vk.com/studvesna_72")}} onAuxClick={() => {window.open("https://vk.com/studvesna_72")}}> {/*onClick=sendMail*/}
+                <Button variant="contained" onClick={() => {window.open("https://vk.com/studvesna_72")}} onMouseDown={handleMiddleClickMediaHacathon}> {/*onClick=sendMail*/}
                     Медиа
                 </Button>
                 <span className="clear"></span>
@@ -231,8 +291,8 @@ function Project() {
                 <h3>Ключевые цифры</h3>
                 <p><ul>
                     <li>75+ участников</li>
-                    <li>1 месяц: длительность проекта (подготовка + реализация)</li>
-                    <li>8 часов: суммарное время мероприятий</li>
+                    <li>2 месяца: длительность проекта (подготовка + реализация)</li>
+                    <li>12 часов: суммарное время мероприятий</li>
                 </ul></p>
                 
                 <h2>Задачи и реализация</h2>
@@ -322,7 +382,7 @@ function Project() {
                 </ul></p>
 
                 <img style={{marginTop: '16px'}} src={require('../assets/images/project-osv-3.jpg')} alt="thumbnail" width="100%"/>
-                <Button variant="contained" onClick={() => {window.open("https://vk.com/album-89511047_305740019")}} onAuxClick={() => {window.open("https://vk.com/album-89511047_305740019")}}> {/*onClick=sendMail*/}
+                <Button variant="contained" onClick={() => {window.open("https://vk.com/album-89511047_305740019")}} onMouseDown={handleMiddleClickMorePhotoHacathon}> {/*onClick=sendMail*/}
                     Больше фото
                 </Button>
                 <span className="clear"></span>
@@ -334,151 +394,266 @@ function Project() {
                 <Button onClick={() => {setIsAktivProjectOpen(false); document.body.classList.remove("no-scroll")}}>
                     <FontAwesomeIcon icon={faCircleXmark} size="2x"/>
                 </Button>
-                <h2>Изменения СО</h2>
+                <h2>Управление СО</h2>
             </div>
             
             <div className="modalProjectContainer">
+				<img src={require('../assets/images/project-aktiv-1.png')} alt="thumbnail" width="100%"/>
 
                 <h2 id="firsth2-no-margin">Описание</h2>
                 <div className="horizontal-line"></div>
 
-                <p id="firstP">Фестиваль «Студенческая весна» — самое масштабное событие молодёжной политики Тюменской области,
-                  в рамках которого студенты и выпускники колледжей и университетов со всего региона раскрывают свои таланты
-                  в таких направлениях как: концертные программы, танцевальное, музыкальное,
-                  интеллектуальные игры, SMM-проект, <b>хакатон</b> и пр.</p>
 
-                <Button id="btn-project-more" variant="contained" onClick={() => {window.open("https://студвесна72.рф")}} onAuxClick={() => {window.open("https://студвесна72.рф")}}> {/*onClick=sendMail*/}
-                    Сайт
-                </Button>
-                <Button variant="contained" onClick={() => {window.open("https://vk.com/studvesna_72")}} onAuxClick={() => {window.open("https://vk.com/studvesna_72")}}> {/*onClick=sendMail*/}
+                <p id="firstP">Это проект меня и моего товарища.
+					Мы были участниками сообщества, в котором видели множество проблем,
+					и нам хотелось их исправить.
+					Для этого был проработан огромный пласт
+					молодёжной политики и внедрён ряд изменений
+					для систематизации работы.</p>
+
+            
+
+                <h3>Моя роль</h3>
+                <p>Инициатор движения, комьюнити-менеджер, проектный менеджер</p>
+
+                <h3>Даты</h3>
+                <p><ul>
+                  <li>Октябрь 2024: начало проекта, анализ ситуации, сбор теории</li>
+                  <li>Ноябрь 2024 - февраль 2025: глубокая проработка проекта</li>
+                  <li>Февраль 2025: консультации с экспертами молодёжной политики</li>
+				  <li>Март 2025: выборы председателя, создание команды, проведение Школы Актива</li>
+				  <li>Май 2025 - февраль 2026: реализация систематизации сообщества</li>
+				  <li>Февраль 2026: выборы нового председателя, завершение проекта</li>
+                </ul></p>
+
+				<h3>Сообщество</h3>
+				<p>Совет обучающихся (Актив) Школы компьютерных наук ТюмГУ</p>
+                
+<Button variant="contained" onClick={() => {window.open("https://vk.com/scs_utmn")}} onMouseDown={handleMiddleClickMediaAktiv}> {/*onClick=sendMail*/}
                     Медиа
                 </Button>
                 <span className="clear"></span>
 
-                <p>Команда организаторов фестиваля состоит из дирекции и кураторов направлений (главные организаторы отдельных мероприятий).</p>
-
-                <h3>Моя роль</h3>
-                <p>Куратор направления (главный организатор)</p>
-
-                <h3>Даты</h3>
-                <p><ul>
-                  <li>Февраль 2025: начало подготовки</li>
-                  <li>5 апреля 2025: открытие</li>
-                  <li>6 апреля 2025: защита</li>
-                </ul></p>
-                
-
-                <h3>Площадка</h3>
-                <p>Водонапорная башня (г. Тюмень, ул. Орджоникидзе, 56 к2)</p>
-
                 <h3>Ключевые цифры</h3>
                 <p><ul>
-                    <li>75+ участников</li>
-                    <li>1 месяц: длительность проекта (подготовка + реализация)</li>
-                    <li>8 часов: суммарное время мероприятий</li>
+                    <li>200+ человек: членов сообщества</li>
+                    <li>800+ человек: касания целевой аудитории</li>
+                    <li>14 месяцев: длительность проекта</li>
+					<li>2700+ человек: число студентов факультета</li>
+					<li>4 фундаментальных мероприятия проведено</li>
+					<li>10 традиционных мероприятий выведено на новый уровень</li>
                 </ul></p>
+
+				<h2>Проблема — зачем всё</h2>
+                <div className="horizontal-line"></div>
+
+				<h3></h3>
+
+				<p>Проект начался с того, что нам просто не нравилось,
+					как всё устроено. Но мы задались вопросом: «Чего мы хотим достичь?»,
+					и самым логичным шагом было выделить текущие проблемы.
+				</p>
+
+				<img src={require('../assets/images/project-aktiv-7.png')} alt="thumbnail" width="100%"/>
                 
+				<p>Мы начали с того, что выписали, что болит лично у нас. Затем
+					мы опросили активистов и скомпилировали всё в список из 19 основных
+					"болячек", которые мы собирались решать.
+				</p>
+
                 <h2>Задачи и реализация</h2>
                 <div className="horizontal-line"></div>
 
                 <h3>Стратегия и планирование</h3>
-                <p>В прошлые годы хакатон проводился полностью в онлайн-формате. Несмотря на крайне ограниченное время, я решил разработать новый гибридный формат.</p>
-                <p>Задача — с нуля разработать концепцию продуктового хакатона.</p>
+                <p>Актив находился в кризисе: участники выгорали, не понимали своей цели, руководство института не видело ценности актива, не было прозрачности и понятной точки входа для новичков.</p>
+                <p>Задача — переработать архитектуру сообщества и внедрить системный подход.</p>
                 <p>Что я сделал:</p>
                 <p><ul>
-                  <li>Изучил мировой опыт организации хакатонов и кейс-чемпионатов.</li>
-                  <li>Связался с предыдущими организаторами, изучил опыт прошлых лет.</li>
-                  <li>Провёл собрание с командой для определения концепции хакатона. Была выбрана площадка и разработан гибридный формат с открытием и закрытием.</li>
-                </ul></p>
+                  <li>Провёл аудит текущего состояния: собрал боли активистов, проанализировал воронку вовлеченности.</li>
+                  <li>Разработал миссию и ценности комьюнити: командная работа, честность, открытость, безопасность и единство.</li>
+                  <li>Спроектировал организационную структуру: ушел от плоской модели к системе из президиума и 5 комитетов (адаптационный, документационный, проектный, информационный, культурно-массовый).</li>
+                  <li>Разработал концепцию минимума первокурсника: путь студента в экосистеме университета.</li>
+				  <li>Проконсультировался с 20 экспертами молодёжной политики университета, региона и страны.</li>
+</ul></p>
+
+				<img src={require('../assets/images/project-aktiv-2.png')} alt="thumbnail" width="100%"/>
+
 
                 <h3>Формирование команды и управление</h3>
-                <p>Задача — найти 2-3 помощников для операционных задач.</p>
+                <p>Задача — распределить зоны ответственности, устранить дублирование функций и выстроить процесс обучения членов сообщества.</p>
                 <p>Что я сделал:</p>
                 <p><ul>
-                  <li>Лично отобрал: двух помощников, ведущего и куратора экспертов.</li>
-                  <li>Распределил зоны ответственности и основные задачи внутри команды.</li>
-                </ul></p>
+                  <li>Распределил полномочия между председателями комитетов, закрепив за каждым конкретные KPI и задачи.</li>
+                  <li>Разработал концепцию Школы Актива — системы онбординга, командообразования и передачи опыта новым поколениям активистов.</li>
+				<li>Внедрил принципы выборности, коллегиальности и обратной связи.</li>
+				</ul></p>
+
+								<img src={require('../assets/images/project-aktiv-8.png')} alt="thumbnail" width="100%"/>
+
                 
-                <h3>Бюджет</h3>
-                <p>Задача — получить от заказчика финансирование проекта.</p>
+                <h3>Финансирование и ресурсы</h3>
+				<p>Проекты Актива годами делались за счет личных средств студентов.</p>
+                <p>Задача — снять финансовую нагрузку с команды и обеспечить проекты бюджетом.</p>
                 <p>Что я сделал:</p>
                 <p><ul>
-                  <li>Написал смету и согласовал с заказчиком.</li>
-                  <li>Написал договор и согласовал с заказчиком.</li>
-                  <li>Получил и распределил средства.</li>
-                  <li>Написал отчёт по итогам мероприятия.</li>
+                  <li>Интегрировал проектный комитет для всестороннего развития проектной деятельности и упаковка мероприятий под грантовое финансирование.</li>
+                  <li>Написал и защитил грант на адаптационные мероприятия.</li>
+                  <li>Внедрил принцип: «Ни копейки из кармана активистов на мероприятия».</li>
                 </ul></p>
 
+								<img src={require('../assets/images/project-aktiv-5.png')} alt="thumbnail" width="100%"/>
+
+
                 <h3>Операционное управление и логистика</h3>
-                <p>Задача — настроить системную работу процессов фестиваля.
+                <p>Задача — исключить хаос, наладить коммуникацию и менеджмент.
                 </p>
                 <p>Что я сделал:</p>
                 <p><ul>
-                  <li>Забронировал площадку на нужные даты.</li>
-                  <li>Организовал перемещение реквизита.</li>
-                  <li>Организовал коммуникацию между участниками и организаторами в телеграм-чате.</li>
-                  <li>Проработал и согласовал с работу служб фестиваля на своём направлении: кейтеринг, медиа, монтаж площадки, печать дипломов, закупка подарков, питьевой режим.</li>
-                  <li>Совместно с ведущим проработал <a href="https://docs.google.com/document/d/1rFS2_8C0ECptXMte4fkiPJyJ8nYNez4Shn-5uoQANmQ/edit?usp=sharing">сценарий открытия</a>.</li>
+                  <li>Спроектировал дорожную карту проектов Актива.</li>
+                  <li>Внедрил систему регулярных собраний с протоколированием.</li>
+                  <li>Актуализировал нормативно-правовую базу Совета обучающихся для легитимного взаимодействия с администрацией вуза.</li>
                 </ul></p>
+
+				<h2>Новые мероприятия</h2>
+				<div className="horizontal-line"></div>
+				<p>Благодаря усилиям моей команды ряд системообразующих мероприятий были
+					введены на постоянную основу.
+				</p>
+
+				<h3>Собрание активистов по вопросу будущего сообщества</h3>
+				<p>Моя роль — главный организатор</p>
+				<p>Это было важнейшее собрание, на котором мы презентовали
+					данный проект членам сообщества и обсуждали куда двигаться
+					сообществу.
+				</p>
+				
+				<h3>Выборы председателя</h3>
+				<p>Моя роль — главный организатор</p>
+				<p>Это была первая ключевая точка проекта. Мы провели
+					выборы в переработанном формате и собрали вокруг
+					нового председателя команду, с которой реализовывали
+					дальнейшие стадии проекта.
+				</p>
+
+				<h3>Школа Актива</h3>
+				<p>Моя роль — идейный вдохновитель, проектный менеджер</p>
+				<p>До 2025 года набор новых членов сообщества проводился
+					всегда по-разному, без какой-то понятной системы.
+				</p>
+				<p>Часто это была обычная гугл-форма, в которой нужно было
+					написать несколько строк о том, почему человек хочет
+					в сообщество, и этого было достаточно, чтобы его взяли.
+					А иногда не было, это зависело от конкретных людей на позициях.
+				</p>
+				<p>Мы структуризировали процесс набора, ключевыми точками которого
+					стали чистка неактивных членов и Школа Актива.
+				</p>
+				<p>Это двухнедельный интенсив, разделённый на две фазы.
+				</p>
+				<p>Первая фаза включает мастер-классы
+					опытных активистов по организации мероприятий, ораторскому
+					мастерству, режиссёрству, проектной деятельности и др.,
+					а также вводную информацию о ценностях, миссии, принципах
+					и истории сообщества.</p>
+				<p>Вторая фаза — практическая. Кандидаты разделяются на группы.
+					Их задача — организовать мероприятия под руководством опытных
+					активистов. После мероприятий в сообщество попадают наиболее
+					зарекомендовавшие себя люди.
+				</p>
+
+				<p>За время проекта мероприятие было проведено 2 раза.
+					Моя команда внесла существенный вклад в проектирование,
+					проработку обратной связи и стандартизацию набора первокурсников.
+				</p>
+
+				<img src={require('../assets/images/project-aktiv-9.png')} alt="thumbnail" width="100%"/>
+
+
+				<h3>Добро пожаловать в Актив</h3>
+				<p>Моя роль — идейный вдохновитель, проектный менеджер</p>
+				<p>Это мероприятие направлено на командообразование и единение
+					сообщества. Оно длится несколько часов и включает в себя
+					квиз по истории сообщества, напутственные слова от приглашённых
+					бывших активистов и огонёк.
+				</p>
 
                 <h2>Результаты</h2>
                 <div className="horizontal-line"></div>
 
                 <p><ul id="margin-bottom-horizontal-line">
-                  <li>Проект реализован за короткий срок: всё прошло в нужные даты, тайминги не были нарушены.</li>
-                  <li>Эксперты отметили активность участников и хорошую работу организаторов.</li>
-                  <li>95% опрошенных участников оценили мероприятие на 5 из 5.</li>
-                  <li>Заказчик доволен результатами.</li>                  
+                  <li>Внедрена прозрачная, масштабируемая модель управления студенческим сообществом.</li>
+                  <li>Разделены зоны ответственности.</li>
+                  <li>Сформирован пул материалов для будущих лидеров.</li>
+                  <li>Решены системные проблемы.</li>
+				  <li>Проекты сообщества выведены на новый уровень по вовлечённости ЦА и масштабу.</li>              
                 </ul></p>
+
+								<img src={require('../assets/images/project-aktiv-4.png')} alt="thumbnail" width="100%"/>
+
 
                 <h2>Трудности, вызовы, проблемы</h2>
                 <div className="horizontal-line"></div>
 
-                <h3>Вовремя не доставили бейджи участников на площадку</h3>
-                <p>Я предусмотрел вход по паспорту по списку, а бейджи были выданы участникам в другой удобный момент.</p>
-                
-                <h3>Кейтеринг приехал невовремя</h3>
-                <p>Я перестроил хронологию мероприятия на ходу, чтобы было удобно и участникам, и экспертам, и волонтёрам.
+                <h3>Инертность</h3>
+                <p>На момент начала проекта в сообществе было ~140 человек, далеко не все из них были согласны с предлагаемыми изменениями. Трудно донести до людей необходимость всё переделать, и чем дольше человек находился в сообществе, тем более он в среднем был против. Для людей в целом свойственно жить по инерции: если работает и так, то не надо трогать.</p>
+                <p>Чтобы сообщество стало единым в вопросе внутреннего устройства, должно смениться 5-6 поколений активистов, т.е. старые участники должны физически покинуть его.</p>
+				<p>Плюсом является то, что в студенческом сообществе самые активные участники - это самые новые члены. Чем старше становится активист, тем больше вероятность, что он "повзрослеет" - найдёт работу, партнёра, всерьёз займётся обучением и т.д., и тогда у него физически меньше времени и желания влиять на внутреннюю политику сообщества.</p>
+				<p>Трудно сопротивляться позитивным изменениям, когда единственный аргумент против - это то, что раньше делали по-другому. Это помогло нам успешно внедрить большую часть предложений.</p>
+
+                <h3>Некуда деть большое количество людей</h3>
+                <p>С одной стороны рост количества участников сообщества воспринимается как безусловно позитивный тренд, а с другой - когда мы пытались структуризировать работу, оказывалось, что подавляющее большинство участников - "фоновые". Людей, реально готовых принять на себя какую-то ответственность и работать в сообществе, а не просто существовать - около 10%.
                 </p>
+				<p>Во всех проектах Актива за год поучаствовало около 100 уникальных людей. Остальных 40-50 пришлось исключить, т.к. непонятно, зачем они.</p>
 
-                <h3>В последний момент не приехала служба монтажа площадки</h3>
-                <p>Я самостоятельно привёз и установил оборудование.
+                <h3>Выгорание лидеров</h3>
+                <p>В процессе перестройки системы на Актив легла двойная нагрузка: нужно было и делать текущие мероприятия, и строить новые процессы. Это приводило к конфликтам и демотивации. Мне приходилось балансировать между внедрением жестких структурных изменений и сохранением эмоционального фона в команде, выступая медиатором в конфликтных ситуациях.
                 </p>
-
-                <h3>Привезли диплом с опечаткой</h3>
-                <p>Я самостоятельно распечатал и отвёз диплом человеку в удобные для него день и место, а участник остался доволен.
-                </p>
-
-                <p className="margin-top-p">По итогам пост-анализа я сделал вывод, что все форс-мажоры так или иначе были следствием плохой коммуникации и нечётких договорённостей.</p>
-
-                
 
                 <h2>Чему я научился</h2>
                 <div className="horizontal-line"></div>
 
                 <p id="firstP2"><ul>
-                  <li>Получил первый опыт большой организации полного цикла в роли руководителя.</li>
-                  <li>Научился работать в условиях ограниченного времени.</li>
-                  <li>Получил первый лидерский опыт: именно от меня зависело настроение команды и участников.</li>
-                  <li>Вывел принцип работы с подрядчиками: организатору подрядчик важнее, чем подрядчику организатор. Т.е. задача именно организатора сделать всё для того, чтобы все нужные службы приехали во все нужные места в нужное время.</li>
-                  <li>Научился совмещать обучение в университете с масштабным проектом: понял важность тайм- и таск-менеджмента, хорошего сна и рациона питания, и в целом собственного настроения.</li>
-                </ul></p>
+                  <li>Получил опыт управления большим сообществом.</li>
+                  <li>Вывел для себя разницу между ивент-менеджментом (сделать разовое событие) и community-менеджментом (построить живую, самовоспроизводящуюся систему).</li>
+                  <li>Научился проводить системный аудит кризисных проектов, находить корневые проблемы и проектировать архитектурные решения (от оргструктуры до KPI).</li>
+                  <li>Понял механизмы работы с сопротивлением изменениям (Change Management) в условиях жесткой внутренней политики и бюрократии.</li>
+                  <li>Прокачал навыки фасилитации, конфликтологии и стратегического планирования на длительных дистанциях.</li>
+                <li>Осознал, что грамотный документооборот и регламенты — это фундамент безопасности и прозрачности работы любой команды.</li>
+				</ul></p>
 
-                <img style={{marginTop: '16px'}} src={require('../assets/images/project-osv-3.jpg')} alt="thumbnail" width="100%"/>
-                <Button variant="contained" onClick={() => {window.open("https://vk.com/album-89511047_305740019")}} onAuxClick={() => {window.open("https://vk.com/album-89511047_305740019")}}> {/*onClick=sendMail*/}
-                    Больше фото
+                <span className="clear the-clear"></span>
+				<Button variant="contained" onClick={() => {window.open("https://drive.google.com/file/d/13hVWW0HBBV18srlr8RJB6EkCcNN69L90/view?usp=sharing")}} onMouseDown={handleMiddleClickAktivPresentation}> {/*onClick=sendMail*/}
+                    Медиа сообщества
+                </Button>
+				
+				<Button variant="contained" onClick={() => {window.open("https://drive.google.com/file/d/13hVWW0HBBV18srlr8RJB6EkCcNN69L90/view?usp=sharing")}} onMouseDown={handleMiddleClickAktivPresentation}> {/*onClick=sendMail*/}
+                    Презентация проекта
                 </Button>
                 <span className="clear"></span>
             </div>
         </Modal>
         
         <div id="projects-to-scroll"></div>
-        <h1>Мои проекты</h1>
+
+		{document.getElementById('portal')?.classList.contains('light-mode') && 
+			<h1 className="big-h1">Мои <span className="green-text-light">проекты</span></h1>
+		}
+		{!document.getElementById('portal')?.classList.contains('light-mode') && 
+			<h1 className="big-h1">Мои <span className="green-text">проекты</span></h1>
+		}
+        
         
         <div id="first-line-projects" className="horizontal-line margin-bottomDIV"></div>
         <div className="projects-grid" id="projects-projects-grid">
+			<div className="inter-project-gap"></div>
             <div className="project">
-                <h2 id="no-hver"  className="marginIMG">Фестиваль театральных постановок «Сказки XVIII» (2025)</h2>
+				{document.getElementById('portal')?.classList.contains('light-mode') && 
+					<h2 id="no-hver"  className="marginIMG really-first-h2">Фестиваль театральных постановок <span className="green-text-light">Сказки XVIII</span></h2>
+				}
+				{!document.getElementById('portal')?.classList.contains('light-mode') && 
+					<h2 id="no-hver"  className="marginIMG really-first-h2">Фестиваль театральных постановок <span className="green-text">Сказки XVIII</span></h2>
+				}
+                
                 <div className="video-wrapper-wrapper">
                     <div className="video-wrapper">
                         <iframe 
@@ -494,28 +669,123 @@ function Project() {
                     Видеограф — Артём Коршун
                     </a>
                 </div>
-                <p>Моя роль — <b>руководитель проекта (главный организатор)</b></p>
+                <h3>Моя роль — <b>руководитель проекта (главный организатор)</b></h3>
+
+				<p id="firstP">Фестиваль «Сказки» — это двухнедельный адаптационный интенсив для первокурсников,
+                  в рамках которого они под руководством старшекурсников создают и представляют
+                  на большой сцене театральные постановки.</p>
+
+                <h3>Ключевые цифры</h3>
+                <p><ul>
+                    <li>400+ участников</li>
+                    <li>150+ гостей концерта</li>
+                    <li>5 месяцев: длительность проекта</li>
+                    <li>30 часов: суммарное время мероприятий</li>
+                    <li>~8100 охват <u><a href="https://vk.com/skazkixviii">медиа-сообщества</a></u></li>
+                </ul></p>
+
                 <Button id="btn-project-more" variant="contained" onClick={() => {setIsSkazkiOpen(true); document.body.classList.add("no-scroll")}}> {/*onClick=sendMail*/}
                     Подробнее
                 </Button>
-                <Button variant="contained" onClick={() => {window.open("https://vk.com/skazkixviii")}} onAuxClick={() => {window.open("https://vk.com/skazkixviii")}}> {/*onClick=sendMail*/}
+                <Button variant="contained" onClick={() => {window.open("https://vk.com/skazkixviii")}} onMouseDown={handleMiddleClickMediaSkazki}> {/*onClick=sendMail*/}
                     Медиа
                 </Button>
                 <span className="clear"></span>
             </div>
 
+			<div className="inter-project-gap-half"></div>
+			<div className="horizontal-line"></div>
+			<div className="inter-project-gap-half"></div>
+
+			<div className="project">
+				{document.getElementById('portal')?.classList.contains('light-mode') && 
+					<h2 id="no-hver"  className="marginIMG">Управление <span className="green-text-light">советом обучающихся</span></h2>
+				}
+				{!document.getElementById('portal')?.classList.contains('light-mode') && 
+					<h2 id="no-hver"  className="marginIMG">Управление <span className="green-text">советом обучающихся</span></h2>
+				}
+                
+                <div className="video-wrapper-wrapper">
+                    <img id="project-main-osv-image" src={require('../assets/images/project-aktiv-title.png')} alt="thumbnail" width="100%"/>
+                </div>
+                <h3>Моя роль — <b>инициатор движения, комьюнити-менеджер, проектный менеджер</b></h3>
+
+				{document.getElementById('portal')?.classList.contains('light-mode') && 
+					<p id="firstP">Создание решений для систематизации студенческого <span className="green-text-light">сообщества</span>.
+					В рамках проекта с нуля была выстроена структура самоуправления, система мотивации и прозрачная документация.
+					Был организован ряд системообразующих мероприятий.</p>
+				}
+				{!document.getElementById('portal')?.classList.contains('light-mode') && 
+					<p id="firstP">Создание решений для систематизации студенческого <span className="green-text">сообщества</span>.
+					В рамках проекта с нуля была выстроена структура самоуправления, система мотивации и прозрачная документация.
+					Был организован ряд системообразующих мероприятий.</p>
+				}
+
+                <h3>Ключевые цифры</h3>
+                <p><ul>
+                    <li>200+ человек: членов сообщества</li>
+					<li>800+ человек: касания целевой аудитории</li>
+                    <li>14 месяцев: длительность проекта</li>
+                    <li>2700+ человек: число студентов факультета</li>
+					<li>4 фундаментальных мероприятия проведено</li>
+					<li>10 традиционных мероприятий выведено на новый уровень</li>
+                </ul></p>
+
+                <Button id="btn-project-more" variant="contained" onClick={() => {setIsAktivProjectOpen(true); document.body.classList.add("no-scroll")}}> {/*onClick=sendMail*/}
+                    Подробнее
+                </Button>
+                <span className="clear"></span>
+            </div>
+			
+			<div className="inter-project-gap-half"></div>
+			<div className="horizontal-line"></div>
+			<div className="inter-project-gap-half"></div>
+
             <div className="project">
-                <h2 id="no-hver"  className="marginIMG">Тюменская областная студенческая весна 2025 — направление хакатон</h2>
+				{document.getElementById('portal')?.classList.contains('light-mode') && 
+					<h2 id="no-hver"  className="marginIMG">Cтуденческая весна — <span className="green-text-light">хакатон</span></h2>
+				}
+				{!document.getElementById('portal')?.classList.contains('light-mode') && 
+					<h2 id="no-hver"  className="marginIMG">Cтуденческая весна 2025 — <span className="green-text">Хакатон</span></h2>
+				}
+                
                 <div className="video-wrapper-wrapper">
                     <img id="project-main-osv-image" src={require('../assets/images/project-osv-2.jpg')} alt="thumbnail" width="100%"/>
                 </div>
-                <p>Моя роль — <b>куратор направления (главный организатор)</b></p>
+                <h3>Моя роль — <b>куратор направления (главный организатор)</b></h3>
+
+				{document.getElementById('portal')?.classList.contains('light-mode') && 
+					<p id="firstP">Фестиваль «Студенческая весна» — самое масштабное событие молодёжной политики Тюменской области,
+                  в рамках которого студенты и выпускники колледжей и университетов со всего региона раскрывают свои таланты
+                  в таких направлениях как: концертные программы, танцевальное, музыкальное,
+                  интеллектуальные игры, SMM-проект, в числе которых <span className="green-text-light">хакатон</span>.</p>
+				}
+				{!document.getElementById('portal')?.classList.contains('light-mode') && 
+					<p id="firstP">Фестиваль «Студенческая весна» — самое масштабное событие молодёжной политики Тюменской области,
+                  в рамках которого студенты и выпускники колледжей и университетов со всего региона раскрывают свои таланты
+                  в таких направлениях как: концертные программы, танцевальное, музыкальное,
+                  интеллектуальные игры, SMM-проект, в числе которых <span className="green-text">хакатон</span>.</p>
+				}
+
+                <h3>Ключевые цифры</h3>
+                <p><ul>
+                    <li>75+ участников</li>
+                    <li>2 месяца: длительность проекта (подготовка + реализация)</li>
+                    <li>12 часов: суммарное время мероприятий</li>
+                </ul></p>
+
                 <Button id="btn-project-more" variant="contained" onClick={() => {setIsHackathonOpen(true); document.body.classList.add("no-scroll")}}> {/*onClick=sendMail*/}
                     Подробнее
                 </Button>
                 <span className="clear"></span>
             </div>
+
         </div>
+
+		
+			
+
+            
 
         {/* <div className="small-projects-wrapper">
             <h2>Другие проекты</h2>
@@ -567,6 +837,7 @@ function Project() {
                 </>}
             </div>
         </div> */}
+		<div className="space-between-sections"></div>
     </div>
     );
 }

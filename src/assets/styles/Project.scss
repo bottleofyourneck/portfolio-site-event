@@ -2,8 +2,22 @@
     margin-top: 24px;
 }
 
+.really-first-h2 {
+	margin-top: 0;
+}
+
 #first-line-projects {
-    margin-bottom: 55.2px;
+   	margin-bottom: 0;
+}
+
+.inter-project-gap {
+	display: block;
+	height: 70px;
+}
+
+.inter-project-gap-half {
+	display: block;
+	height: 35px;
 }
 
 .small-projects-wrapper {
@@ -40,7 +54,7 @@
 .projects-container {
     display: flex;
     flex-direction: column;
-    padding: 5% 10%;
+    padding: 0% 10%;
     text-align: left;
 }
   
@@ -98,6 +112,11 @@
     padding: 48px;
     padding-top: 36px;
     height: calc(100% - 75px);
+
+	.the-clear {
+		display: block;
+		margin-top: 17.6px;
+	}
     
 
     button {
@@ -107,12 +126,13 @@
       margin-top: 5px;
       margin-bottom: 16px;
       padding: 6px 16px;
+	  margin-right: 17.6px;
     }
     
     button:hover {
-      background-color: #5000ca;
-      color: white;
-    }
+		background-color: #00ff40;
+      	color: black;
+	}
 
     #firstP {
         margin-top: 2em;
@@ -193,7 +213,7 @@
     grid-template-columns: repeat(1, 1fr);
 
     .project {
-      margin-bottom: 50px;
+      //margin-bottom: 50px;
 
       p {
           width: clamp(300px, 80%, 1000px)
@@ -207,10 +227,28 @@
       }
       
       button:hover {
-        background-color: #5000ca;
-        color: white;
-      }
+		background-color: #00ff40;
+      	color: black;
+	}
   }
+}
+
+.light-mode {
+	.modalProjectContainer {
+		button:hover {
+		background-color: #24817B;
+      	color: white;
+	}
+	}
+
+	#projects-projects-grid {
+		.project {
+			button:hover {
+		background-color: #24817B;
+      	color: white;
+	}
+		}
+	}
 }
 
 .video-wrapper-wrapper {
@@ -263,6 +301,9 @@
 
 @media screen {
     @media (max-width: 700px) {
+		.inter-project-gap {
+			height: 30px;
+		}
         .projects-container {
             display: block;
             padding-left: 5%;
@@ -274,7 +315,7 @@
         }
       
         .projects-container .projects-grid .project {
-            padding-bottom: 5%;
+            //padding-bottom: 5%;
         }
 
         .modalProjectContainer {

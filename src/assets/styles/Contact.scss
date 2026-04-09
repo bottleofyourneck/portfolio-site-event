@@ -1,10 +1,11 @@
 #contacts-container {
   display: block;
-  padding-bottom: 50px;
+  //padding-bottom: 50px;
 
   .image-wrapper {
     z-index: 2;
-    margin-bottom: 17.6px;
+    //margin-bottom: 17.6px;
+	height: 200px !important;
     img {
         width: 200px;
         border-radius: 50%;
@@ -62,15 +63,24 @@
   }
 }
 
+.light-mode {
+	.contact-wrapper:hover {
+		svg {
+			color: #24817B;
+    		transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;
+		}
+	}
+}
+
 .contact-wrapper:hover {
   button {
-    background-color: #5000ca;
+    background-color: #00ff40;
     color: white;
   }
 
   svg {
-    color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: #00ff40;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;
   }
 }
 
@@ -89,7 +99,7 @@
   }
 
   button:hover {
-    background-color: #5000ca;
+    background-color: #00ff40;
     color: white;
   }
 
@@ -135,6 +145,10 @@ form {
     
     .another-wrapper {
       display: block !important;
+
+	  .image-wrapper {
+		  margin-bottom: 1em;
+	  }
     }
 
     .contact-wrapper-wrapper {

@@ -5,7 +5,13 @@ import '../assets/styles/Main.scss';
 
 function Main() {
 
-  return (
+  return (<>
+  {document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ visibility: "visible"}}></div>
+	}
+	{!document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", visibility: "visible"}}></div>
+	}
     <div className="container" id="first-container">
       <div className="about-section">
         <div className="image-wrapper">
@@ -26,9 +32,16 @@ function Main() {
 </svg>
             </a>
           </div>
-          <h1>Даниил Долгополов</h1>
-          <p>Менеджер проектов</p>
+			{document.getElementById('portal')?.classList.contains('light-mode') && 
+				<h1 className="big-h1">Даниил <span className="green-text-light">Долгополов</span></h1>
+			}
+			{!document.getElementById('portal')?.classList.contains('light-mode') && 
+				<h1 className="big-h1">Даниил <span className="green-text">Долгополов</span></h1>
+			}
+          
+          <p>Проектный менеджер</p>
           <p>Организатор мероприятий</p>
+		  <p>Комьюнити-менеджер</p>
           <p id="mainNote">В активном поиске работы</p> 
 
           <div className="mobile_social_icons">
@@ -46,9 +59,19 @@ function Main() {
             </a>
           </div>
         </div>
+
+		
       </div>
+	  
     </div>
-  );
+
+	{document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ visibility: "visible"}}></div>
+	}
+	{!document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", visibility: "visible"}}></div>
+	}
+  </>);
 }
 
 export default Main;

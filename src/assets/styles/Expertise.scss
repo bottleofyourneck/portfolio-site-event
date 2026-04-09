@@ -97,17 +97,23 @@
 }
 
 .skills-container {
-    padding: 5% 10%;
+    padding: 0% 10%;
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
+
+	//background-color: rgba(0,0,0,0.2);
 
     svg {
         color: white;
     }
 }
-  
+
+.skills-container#second-skills-container {
+	background-color:rgba(208, 208, 208, 0);
+}
+
 .skills-container .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -126,9 +132,19 @@
     }
     
     button:hover {
-      background-color: #5000ca;
-      color: white;
+      background-color: #00ff40;
+      color: black;
     }
+}
+
+.light-mode {
+	.skills-container .skills-grid .skill {
+		button:hover {
+		background-color: #24817B;
+      	color: white;
+	}
+	}
+	
 }
 
 span.clear { clear: left; display: block; }
@@ -231,8 +247,18 @@ body.active-modal {
   }
 }
 
+.another-gap {
+			display: none;
+			height: 0px;
+		}
+
 @media screen {
     @media (max-width: 768px) {
+		.another-gap {
+			display:block;
+			height: 30px;
+		}
+
         .modal-container {
           button {
             margin-top: 12px;
@@ -259,7 +285,7 @@ body.active-modal {
         }
         
         .skills-container .skills-grid .skill {
-            padding-bottom: 10%;
+            //padding-bottom: 10%;
         }
         
 
@@ -269,7 +295,7 @@ body.active-modal {
             padding-top: 5%;
 
             .project {
-              padding-bottom: 10%;
+              //padding-bottom: 10%;
             }
         }
 

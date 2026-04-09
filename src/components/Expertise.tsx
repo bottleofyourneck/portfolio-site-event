@@ -141,11 +141,29 @@ function Expertise() {
 
         <div className="skills-container">
             <div id="expertise-to-scroll"></div>
-            <h1>Навыки</h1>
+			{document.getElementById('portal')?.classList.contains('light-mode') && 
+				<div className="space-between-sections"></div>
+			}
+			{!document.getElementById('portal')?.classList.contains('light-mode') && 
+				<div className="space-between-sections" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)"}}></div>
+			}
+			{document.getElementById('portal')?.classList.contains('light-mode') && 
+				<h1 className="big-h1">Мои <span className="green-text-light">навыки</span></h1>
+			}
+			{!document.getElementById('portal')?.classList.contains('light-mode') && 
+				<h1 className="big-h1">Мои <span className="green-text">навыки</span></h1>
+			}
+            
             <div className="horizontal-line margin-bottomDIV"></div>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon className="marginIMG" icon={faCalendarDay} size="3x" height="100%"/>
+					{document.getElementById('portal')?.classList.contains('light-mode') && 
+						<FontAwesomeIcon className="marginIMG green-text-light" icon={faCalendarDay} size="3x" height="100%"/>
+					}
+					{!document.getElementById('portal')?.classList.contains('light-mode') && 
+						<FontAwesomeIcon className="marginIMG green-text" icon={faCalendarDay} size="3x" height="100%"/>
+					}
+                    
                     <h3>Организация мероприятий</h3>
                     <p>Я участвовал в организации разных событий на разных позициях - от помощника до главного организатора.</p>
                     <div className="flex-chips">
@@ -161,9 +179,18 @@ function Expertise() {
                     <span className="clear"></span>
                 </div>
 
+				<div className="another-gap"></div>
+
                 <div className="skill">
+
+					{document.getElementById('portal')?.classList.contains('light-mode') && 
+						<FontAwesomeIcon className="marginIMG green-text-light" icon={faSitemap} size="3x" height="100%"/>
+					}
+					{!document.getElementById('portal')?.classList.contains('light-mode') && 
+						<FontAwesomeIcon className="marginIMG green-text" icon={faSitemap} size="3x" height="100%"/>
+					}
                     
-                    <FontAwesomeIcon className="marginIMG" icon={faSitemap} size="3x" height="100%"/>
+                    
                     <h3>Управление проектами</h3>
                     <p>Эти навыки я развиваю не только через организацию мероприятий, но в целом занимаясь различного рода проектами.</p>
                     <div className="flex-chips">
@@ -178,8 +205,17 @@ function Expertise() {
                     <span className="clear"></span>
                 </div>
 
+				<div className="another-gap"></div>
+
                 <div className="skill">
-                <FontAwesomeIcon className="marginIMG" icon={faPeopleArrows} size="3x" height="100%"/>
+
+					{document.getElementById('portal')?.classList.contains('light-mode') && 
+						<FontAwesomeIcon className="marginIMG green-text-light" icon={faPeopleArrows} size="3x" height="100%"/>
+					}
+					{!document.getElementById('portal')?.classList.contains('light-mode') && 
+						<FontAwesomeIcon className="marginIMG green-text" icon={faPeopleArrows} size="3x" height="100%"/>
+					}
+                
                     <h3>Гибкие навыки</h3>
                     <p>Отношусь к этому не как к дополнению, а как к отдельной категории умений, которые влияют на результат, который я выдаю.</p>
                     <div className="flex-chips">
@@ -190,7 +226,12 @@ function Expertise() {
                     </div>
                 </div>
 
-            </div>
+            </div>{document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections"></div>
+	}
+	{!document.getElementById('portal')?.classList.contains('light-mode') && 
+		<div className="space-between-sections" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)"}}></div>
+	}
         </div>
     </div>
     );
